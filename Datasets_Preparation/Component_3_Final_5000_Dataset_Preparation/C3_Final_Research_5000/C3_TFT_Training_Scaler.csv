@@ -1,0 +1,4 @@
+﻿feature_name,mean_train_only,std_train_only
+log_price,6.823507309,0.532264113
+log_supply,7.291899681,0.521222651
+demand_index,0.973127782,0.093795702

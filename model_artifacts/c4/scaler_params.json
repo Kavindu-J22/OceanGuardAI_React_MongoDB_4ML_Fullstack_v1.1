@@ -1,0 +1,36 @@
+{
+  "features": [
+    "vessel_length_m",
+    "vessel_beam_m",
+    "displacement_mass_kg",
+    "engine_rated_kw_assumed",
+    "travel_roundtrip_distance_km_scenario",
+    "outbound_speed_kn_model",
+    "forecast_wave_hs_m_c1_synthetic",
+    "forecast_wind_speed_ms_c1_synthetic",
+    "planned_duration_h_c1"
+  ],
+  "mean": [
+    9.492240905761719,
+    2.804147243499756,
+    6758.4931640625,
+    61.510719299316406,
+    162.9095916748047,
+    6.32019567489624,
+    1.4275692701339722,
+    12.00877857208252,
+    30.34780502319336
+  ],
+  "std": [
+    3.4274964332580566,
+    0.9100626707077026,
+    7865.55419921875,
+    57.59425735473633,
+    234.00503540039062,
+    1.1029858589172363,
+    0.7501647472381592,
+    5.6924004554748535,
+    38.432579040527344
+  ],
+  "best_val_mae": 49.56634333946185
+}

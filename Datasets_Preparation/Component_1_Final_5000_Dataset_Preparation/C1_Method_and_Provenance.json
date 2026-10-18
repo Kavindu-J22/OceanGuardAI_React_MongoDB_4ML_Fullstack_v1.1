@@ -1,0 +1,72 @@
+{
+  "dataset_name": "C1 Vessel-Specific Safety Physics-Constrained Synthetic Research Dataset",
+  "version": "1.0.0",
+  "generated_date": "2026-10-16",
+  "seed": 20261016,
+  "sample_count": 5000,
+  "vessel_count": 250,
+  "steps_per_trip": 12,
+  "physics_constants": {
+    "gravity_mps2": 9.80665,
+    "seawater_density_kgm3": 1025.0,
+    "air_density_kgm3": 1.225,
+    "assumed_lateral_drag_coefficient": 1.1
+  },
+  "sample_design": "synthetic; 2023-2025; stratified stress cases; not representative of observed climatology",
+  "risk_weights_assumptions_not_official": {
+    "wave_length_exposure": 0.24,
+    "wave_freeboard_exposure": 0.14,
+    "gust_exposure": 0.16,
+    "wave_steepness_exposure": 0.12,
+    "payload_exposure": 0.1,
+    "wind_force_exposure": 0.07,
+    "visibility_exposure": 0.07,
+    "pressure_tendency_exposure": 0.06,
+    "rain_exposure": 0.04
+  },
+  "risk_aggregation": "0.6*max(per-step score)+0.4*quantile75(per-step score)",
+  "classification_cutoffs_research_assumptions": {
+    "Safe": "<35",
+    "Caution": "35 to <65",
+    "Danger": ">=65"
+  },
+  "data_split": "train 2023-2024; validation 2025 H1; test 2025 H2; all are synthetic",
+  "sources": [
+    {
+      "title": "FAO/ILO/IMO 2012 Fishing Vessel Safety Recommendations",
+      "url": "https://www.fao.org/4/i3108e/i3108e00.htm",
+      "role": "qualitative vessel-safety context, not numeric proxy thresholds"
+    },
+    {
+      "title": "FAO 2009 Safety practices related to small fishing vessel stability",
+      "url": "https://www.fao.org/4/i0625e/i0625e00.htm",
+      "role": "load/freeboard/stability concepts, not numerical hull specs"
+    },
+    {
+      "title": "NOAA NDBC significant wave height and wave steepness",
+      "url": "https://www.ndbc.noaa.gov/faq/wavecalc.shtml",
+      "role": "wave terminology, not observed data downloaded"
+    },
+    {
+      "title": "NOAA wave relationships and deep water approximation",
+      "url": "https://www.weather.gov/media/wrh/online_publications/TMs/TM-51.pdf",
+      "role": "wave dispersion equation"
+    },
+    {
+      "title": "OpenStax drag forces",
+      "url": "https://openstax.org/books/college-physics/pages/5-2-drag-forces",
+      "role": "generic drag force law"
+    },
+    {
+      "title": "Sri Lanka 2024 Annual Fisheries Statistical Bulletin",
+      "url": "https://www.fisheries.gov.lk/web/images/statistics/annual_report/Annual_Fisheries_Statistical_Bulletin_2024_compressed.pdf",
+      "role": "vessel category names only; synthetic vessel specs"
+    },
+    {
+      "title": "Open-Meteo Marine Weather API",
+      "url": "https://open-meteo.com/en/docs/marine-weather-api",
+      "role": "future real weather ingestion option, no API downloaded"
+    }
+  ],
+  "provenance_notice": "ALL rows for vessels/weather/labels are synthetic and are NOT official FAO/IMO limits, measured accidents, or certified maritime safety advice."
+}

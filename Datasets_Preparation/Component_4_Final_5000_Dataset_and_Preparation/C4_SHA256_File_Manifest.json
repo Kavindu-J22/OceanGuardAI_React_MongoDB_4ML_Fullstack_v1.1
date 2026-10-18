@@ -1,0 +1,26 @@
+{
+  "hash_algorithm": "SHA-256",
+  "files": {
+    "README_FIRST_SINHALA.md": "c4b70162841d59dce58aba9bde8470868f8775ff4fab18692d160a7b16915bcf",
+    "C4_Master_5000_Trip_Scenarios.csv": "e036201485a33b5032f9917e5204ad5b7d8e3390985390d48292c6db0ea6b722",
+    "C4_Physics_Legs_10000.csv": "4b3c5ff5b0375d4a506362e590229fed8eae513264ce19354276513845594c0b",
+    "C4_Synthetic_Engine_Registry_250.csv": "3a9905252772b4f56c677b938c129443cf5eae20f56d08d57e89ae4b42bdbbec",
+    "C4_Dataset_Excel_Viewer.xlsx": "3b46a36a3a771eafc60365115e554b41d710597c9b2611b550f1fee6415c2561",
+    "C4_Data_Dictionary.csv": "5ef0c0cd8daf8efaf87ce9b9d133b30b9bbddee08781ca0d44053b5fdf949c20",
+    "C4_PINN_Model_Ready_5000.npz": "9101c6df8466595b93c5f64e07c00919df394c4ee632007da34aaa8ec6abd8e6",
+    "C4_Feature_Manifest.json": "2e1b12922edf7a7c9f6c6514da2597bbe7e4f5f6002bb803999ef5aad5a8c0d1",
+    "C4_Validation_Report.json": "975d6e25e96aa309a0f0c9c49249c72bddbe8ba85e6059783c39cacf783a2503",
+    "C4_Independent_Validation_44_Checks.json": "222b67a68c76d83f70c54d27c16e8caf0497ca9110ea709b99d78646726a95a7",
+    "C4_Method_Parameters_Provenance.json": "94443f99bda57cbdac2c4ed0a59e6a3d14025d4139d88809530113d8e79f8a3d",
+    "C4_Dataset_Justification_Sinhala.docx": "4e6da7010cccf9eaac9779779b6367d11e53855d03581fbc48650204254d2025",
+    "C4_Synthetic_Fuel_By_Vessel.png": "ad7549e1c7d07abfdd76b0b6bdc680e28cb58b1c6194bea1db75a1c59574a9ce",
+    "C4_Synthetic_Fuel_Vs_Distance.png": "98580bfff6b3b1034e1dfc93ef011a4da3901d28a96618668067a48d3a2ce428",
+    "generate_c4.py": "c32359e77aa00d604bfc9583d16c0b64d392c5951a0bf5210693ab38264336b3",
+    "validate_c4_independent.py": "2ff1fc5a90735029f726c6a2cfc2b4f71e3f65e9c14e6ef1943830d8fa03af04",
+    "build_c4_document.py": "38121c04209d4d3340408a7f49a5e361d2a7fbb5c6fb29aaa42a1736213f9278",
+    "build_c4_excel.py": "025b466c742107e3dc2ba5c4e3fd21c1d9fb8b855782733031865a730fa797bf",
+    "upstream_source_data/C1_Master_5000_Trips.csv": "9f9a6283ef6506229b1fbb28dae442ed3d2658bfd48018ae690e85886193d28e",
+    "upstream_source_data/C1_Vessel_Registry_250.csv": "39ba46d8615b00671372e1d9cf3bd6dbcb4598a31d391439a4a029a403ba05ab",
+    "upstream_source_data/C2_Zone_Registry_100.csv": "9c9548225f33ba956cf86d011934870a65f85daccf7e90343895b8fa4809be2c"
+  }
+}

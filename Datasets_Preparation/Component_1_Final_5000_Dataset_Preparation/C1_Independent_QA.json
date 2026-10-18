@@ -1,0 +1,35 @@
+{
+  "result": "PASS",
+  "tests": {
+    "master_exact_5000": true,
+    "weather_exact_60000": true,
+    "registry_250": true,
+    "trip_pk_unique": true,
+    "composite_weather_pk_unique": true,
+    "each_trip_has_12_steps": true,
+    "join_complete": true,
+    "foreign_key_registry_valid": true,
+    "missing_cells_zero": true,
+    "all_dri_bounds": true,
+    "label_consistency": true,
+    "wind_gust_above_mean": true,
+    "wave_steepness_constraint": true,
+    "positive_physics": true,
+    "wave_length_equation": true,
+    "buoyancy_immersion_equation": true,
+    "freeboard_equation": true,
+    "splits_3500_750_750": true,
+    "dates_train_pre_2025": true,
+    "dates_val_2025_h1": true,
+    "dates_test_2025_h2": true,
+    "sensitivity_quantile_order": true,
+    "all_synthetic_provenance": true,
+    "time_step_index_0_to_11": true
+  },
+  "count_pass": 24,
+  "total_tests": 24,
+  "limitations": [
+    "Checks prove internal consistency only; do not establish empirical validity",
+    "All labels are heuristics, not accident outcomes"
+  ]
+}

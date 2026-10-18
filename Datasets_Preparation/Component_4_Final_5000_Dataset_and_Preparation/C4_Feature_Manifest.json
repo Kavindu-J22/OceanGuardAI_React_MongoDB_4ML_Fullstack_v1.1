@@ -1,0 +1,29 @@
+{
+  "feature_names": [
+    "vessel_length_m",
+    "vessel_beam_m",
+    "block_coefficient_assumed",
+    "lightship_mass_kg",
+    "payload_mass_kg",
+    "displacement_mass_kg",
+    "engine_rated_kw_assumed",
+    "engine_age_years_assumed",
+    "propulsive_efficiency_assumed",
+    "bsfc_optimum_kg_kwh_assumed",
+    "maintenance_factor_assumed",
+    "forecast_wave_hs_m_c1_synthetic",
+    "wave_peak_period_s_c1_synthetic",
+    "forecast_wind_speed_ms_c1_synthetic",
+    "wave_heading_cos_synthetic",
+    "wind_heading_cos_synthetic",
+    "along_current_outbound_ms_assumed",
+    "planned_duration_h_c1",
+    "travel_roundtrip_distance_km_scenario",
+    "fishing_operations_hours"
+  ],
+  "target": "fuel_consumption_l_model",
+  "model_note": "The dataset alone is NOT a PINN. Implement a PINN/hybrid model with physics-residual loss to claim that architecture.",
+  "no_data_leakage": "Only pre-trip assumed features; no target or downstream calculated fuel/power/resistance features.",
+  "train_only_normalization": true,
+  "source": "synthetic"
+}

@@ -1,0 +1,260 @@
+{
+  "status": "PASS",
+  "checks_passed": 63,
+  "checks_failed": 0,
+  "external_validation": "NOT_PERFORMED",
+  "test_results": [
+    {
+      "test": "Primary exactly 5,000 rows",
+      "result": "PASS"
+    },
+    {
+      "test": "Decision 1,250 rows",
+      "result": "PASS"
+    },
+    {
+      "test": "Options 5,000 rows",
+      "result": "PASS"
+    },
+    {
+      "test": "Temperature 20,000 rows",
+      "result": "PASS"
+    },
+    {
+      "test": "Exactly 5 species",
+      "result": "PASS"
+    },
+    {
+      "test": "Exactly 5 markets",
+      "result": "PASS"
+    },
+    {
+      "test": "Exactly 200 distinct dates",
+      "result": "PASS"
+    },
+    {
+      "test": "Date bounds 2025-01-01 through 2025-07-19",
+      "result": "PASS"
+    },
+    {
+      "test": "Each market\u00d7species =200 days",
+      "result": "PASS"
+    },
+    {
+      "test": "Each date has 25 records",
+      "result": "PASS"
+    },
+    {
+      "test": "Market rows unique composite date key",
+      "result": "PASS"
+    },
+    {
+      "test": "All market record IDs distinct",
+      "result": "PASS"
+    },
+    {
+      "test": "Zero blank cells master",
+      "result": "PASS"
+    },
+    {
+      "test": "Every master row synthetic provenance",
+      "result": "PASS"
+    },
+    {
+      "test": "Positive prices and simulated supply",
+      "result": "PASS"
+    },
+    {
+      "test": "Demand index positive",
+      "result": "PASS"
+    },
+    {
+      "test": "Weekend consistent with date",
+      "result": "PASS"
+    },
+    {
+      "test": "Month consistent with date",
+      "result": "PASS"
+    },
+    {
+      "test": "Chronological train,val,test dates",
+      "result": "PASS"
+    },
+    {
+      "test": "Synthetic structural market price recomputed",
+      "result": "PASS"
+    },
+    {
+      "test": "Supply ratio consistent with supply and baseline",
+      "result": "PASS"
+    },
+    {
+      "test": "Distinct option IDs",
+      "result": "PASS"
+    },
+    {
+      "test": "Exactly 4 options per scenario",
+      "result": "PASS"
+    },
+    {
+      "test": "Required choices per scenario",
+      "result": "PASS"
+    },
+    {
+      "test": "Every decision scenario has four temp histories",
+      "result": "PASS"
+    },
+    {
+      "test": "Segments in 1 to 4 sequence",
+      "result": "PASS"
+    },
+    {
+      "test": "No negative durations in temperature history",
+      "result": "PASS"
+    },
+    {
+      "test": "Temperature < reasonable scenario range 0..12C",
+      "result": "PASS"
+    },
+    {
+      "test": "Every simulated option retains same lot weight across its four choices",
+      "result": "PASS"
+    },
+    {
+      "test": "Arrhenius rate recomputed independently",
+      "result": "PASS"
+    },
+    {
+      "test": "Spoilage dose equals k \u00d7 hours",
+      "result": "PASS"
+    },
+    {
+      "test": "Option damage dose equals all segment damages",
+      "result": "PASS"
+    },
+    {
+      "test": "Option freshness equals exp(-dose)",
+      "result": "PASS"
+    },
+    {
+      "test": "Freshness always between 0 and 1",
+      "result": "PASS"
+    },
+    {
+      "test": "Monotonic quality valuation multiplier",
+      "result": "PASS"
+    },
+    {
+      "test": "Saleable fraction proxy recomputed",
+      "result": "PASS"
+    },
+    {
+      "test": "Market fees, travel and ice net return formula",
+      "result": "PASS"
+    },
+    {
+      "test": "Ex-post economics recomputed",
+      "result": "PASS"
+    },
+    {
+      "test": "Net returns all finite",
+      "result": "PASS"
+    },
+    {
+      "test": "Transport distances zero if not transporting",
+      "result": "PASS"
+    },
+    {
+      "test": "Only transport options have positive route distances",
+      "result": "PASS"
+    },
+    {
+      "test": "No negative transport or icing costs",
+      "result": "PASS"
+    },
+    {
+      "test": "Transport costs = km\u00d7175 LKR/km",
+      "result": "PASS"
+    },
+    {
+      "test": "No ex-post future price used in immediate price forecast",
+      "result": "PASS"
+    },
+    {
+      "test": "At least some wait forecasts differ from ex-post tomorrow",
+      "result": "PASS"
+    },
+    {
+      "test": "Recommended option has maximum *predicted* net return",
+      "result": "PASS"
+    },
+    {
+      "test": "Oracle chosen from *ex-post* and kept separate",
+      "result": "PASS"
+    },
+    {
+      "test": "Non-negative ex-post regret",
+      "result": "PASS"
+    },
+    {
+      "test": "Every recommendation marked NOT food safety approval",
+      "result": "PASS"
+    },
+    {
+      "test": "Biological kinetic parameters positive",
+      "result": "PASS"
+    },
+    {
+      "test": "All species proxy params uncalibrated",
+      "result": "PASS"
+    },
+    {
+      "test": "TFT group count 25",
+      "result": "PASS"
+    },
+    {
+      "test": "TFT train tensor shape",
+      "result": "PASS"
+    },
+    {
+      "test": "TFT train target-only temporal split",
+      "result": "PASS"
+    },
+    {
+      "test": "TFT train finite tensors",
+      "result": "PASS"
+    },
+    {
+      "test": "TFT validation tensor shape",
+      "result": "PASS"
+    },
+    {
+      "test": "TFT validation target-only temporal split",
+      "result": "PASS"
+    },
+    {
+      "test": "TFT validation finite tensors",
+      "result": "PASS"
+    },
+    {
+      "test": "TFT test tensor shape",
+      "result": "PASS"
+    },
+    {
+      "test": "TFT test target-only temporal split",
+      "result": "PASS"
+    },
+    {
+      "test": "TFT test finite tensors",
+      "result": "PASS"
+    },
+    {
+      "test": "TFT total non-crossing windows",
+      "result": "PASS"
+    },
+    {
+      "test": "Price target correlates with npz labels exactly",
+      "result": "PASS"
+    }
+  ]
+}

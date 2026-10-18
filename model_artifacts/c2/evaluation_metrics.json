@@ -1,0 +1,8 @@
+{
+  "component": "C2_Fishing_Ground_Recommendation",
+  "architecture": "Spatiotemporal Graph Convolutional Network (ST-GCN) with Spatial Attention",
+  "spatial_nodes": 100,
+  "test_hsi_mae": 0.10810234504086631,
+  "best_val_loss": 0.031948888674378395,
+  "temporal_window": 5
+}

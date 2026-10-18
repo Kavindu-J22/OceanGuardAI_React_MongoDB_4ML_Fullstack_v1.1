@@ -1,0 +1,63 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:7.0
+    container_name: oceanguard_mongodb
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - oceanguard_net
+
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: oceanguard_backend
+    restart: always
+    ports:
+      - "8000:8000"
+    environment:
+      - ENVIRONMENT=production
+      - PROJECT_NAME=OceanGuard AI Fullstack Platform
+      - API_V1_STR=/api/v1
+      - SECRET_KEY=oceanguard_super_secure_jwt_secret_marine_ai_2026_key_xyz_9982
+      - ALGORITHM=HS256
+      - ACCESS_TOKEN_EXPIRE_MINUTES=1440
+      - MONGODB_URI=mongodb://mongodb:27017
+      - DATABASE_NAME=oceanguard_db
+      - BACKEND_CORS_ORIGINS=["http://localhost:5173","http://localhost:80","http://localhost:3000","http://127.0.0.1:5173"]
+    depends_on:
+      mongodb:
+        condition: service_healthy
+    networks:
+      - oceanguard_net
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: oceanguard_frontend
+    restart: always
+    ports:
+      - "80:80"
+      - "5173:80"
+    depends_on:
+      - backend
+    networks:
+      - oceanguard_net
+
+networks:
+  oceanguard_net:
+    driver: bridge
+
+volumes:
+  mongo_data:

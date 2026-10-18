@@ -1,0 +1,104 @@
+{
+  "name": "C4 physics-constrained synthetic marine fuel dataset",
+  "version": "1.0",
+  "created_on": "2026-10-16",
+  "seed": 20261016,
+  "records": 5000,
+  "leg_records": 10000,
+  "source_c1": "C1_Research_Final_5000/C1_Master_5000_Trips.csv, C1_Vessel_Registry_250.csv",
+  "source_c2": "C2_Research_Final_5000/C2_Zone_Registry_100.csv",
+  "links": "Exact C1 vessel_id and trip_id; nearest C2 zone spatial-only, NOT time aligned and not route verified",
+  "physics_inspiration": [
+    "ITTC-1957 correlation line",
+    "Reynolds",
+    "Froude",
+    "Buoyancy displacement approximation",
+    "R=0.5 rho v2 Cd A aerodynamic drag",
+    "P=Rv/eta",
+    "mass fuel=BSFC*shaft energy; volume=mass/rho",
+    "harmonic mean link for symmetric nautical mile legs"
+  ],
+  "explicit_uncalibrated_terms": [
+    "Wetted hull area simplification",
+    "hull form factor",
+    "Froude-power residuary term",
+    "squared wave height directional increment",
+    "propulsive efficiency",
+    "low-load BSFC correction",
+    "engine continuous power percentage",
+    "auxiliary/fishing duty",
+    "sensitivity interval heuristic",
+    "reserve percentage and fuel availability"
+  ],
+  "not_used": [
+    "Navier-Stokes numerical solver",
+    "measured resistance",
+    "observed fuel telemetry",
+    "real route/navigation validation",
+    "regulatory fuel reserve"
+  ],
+  "units": {
+    "diesel_density_kg_l": 0.84,
+    "sea_water_density_kg_m3": 1025.0,
+    "kinematic_viscosity_m2_s": 1.19e-06,
+    "air_density_kg_m3": 1.225,
+    "g_m_s2": 9.80665,
+    "knot_m_s": 0.514444,
+    "hp_to_kw": 0.745699872
+  },
+  "model_ready_feature_names": [
+    "vessel_length_m",
+    "vessel_beam_m",
+    "block_coefficient_assumed",
+    "lightship_mass_kg",
+    "payload_mass_kg",
+    "displacement_mass_kg",
+    "engine_rated_kw_assumed",
+    "engine_age_years_assumed",
+    "propulsive_efficiency_assumed",
+    "bsfc_optimum_kg_kwh_assumed",
+    "maintenance_factor_assumed",
+    "forecast_wave_hs_m_c1_synthetic",
+    "wave_peak_period_s_c1_synthetic",
+    "forecast_wind_speed_ms_c1_synthetic",
+    "wave_heading_cos_synthetic",
+    "wind_heading_cos_synthetic",
+    "along_current_outbound_ms_assumed",
+    "planned_duration_h_c1",
+    "travel_roundtrip_distance_km_scenario",
+    "fishing_operations_hours"
+  ],
+  "recommended_ml": "Physics-guided loss with non-negativity and equation residual; synthetic label held out; independent real measured validation essential",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "ITTC Resistance Committee: ITTC-57 Friction line",
+      "url": "https://ittc.info/media/5516/03.pdf"
+    },
+    {
+      "id": "S2",
+      "title": "FAO Fisherman workbook: fuel consumption",
+      "url": "https://www.fao.org/4/ah827e/AH827E06.htm"
+    },
+    {
+      "id": "S3",
+      "title": "NOAA NDBC wave characteristics",
+      "url": "https://www.ndbc.noaa.gov/faq/wavecalc.shtml"
+    },
+    {
+      "id": "S4",
+      "title": "FAO ILO IMO Safety recommendations",
+      "url": "https://www.fao.org/4/i3108e/i3108e00.htm"
+    },
+    {
+      "id": "S5",
+      "title": "Fisheries Statistics Sri Lanka 2024",
+      "url": "https://www.fisheries.gov.lk/web/images/statistics/annual_report/Fisheries_Statistics_-2024-min.pdf"
+    },
+    {
+      "id": "S6",
+      "title": "Copernicus Global Ocean Waves Reanalysis",
+      "url": "https://data.marine.copernicus.eu/product/GLOBAL_MULTIYEAR_WAV_001_032/description"
+    }
+  ]
+}

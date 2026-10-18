@@ -1,0 +1,98 @@
+{
+  "version": "1.0-prototype",
+  "records": 5000,
+  "date_count": 50,
+  "nodes": 100,
+  "graph_edges": 360,
+  "train_days": 29,
+  "validation_days": 7,
+  "test_days": 7,
+  "QA_passed": 39,
+  "QA_total": 39,
+  "QA_checks": {
+    "exact_5000_master_rows": true,
+    "exact_100_unique_spatial_nodes": true,
+    "exact_50_unique_dates": true,
+    "full_spatiotemporal_cartesian_product": true,
+    "360_directional_four_neighbor_edges": true,
+    "edge_bidirectionality": true,
+    "physical_current_divergence_exact": true,
+    "chlorophyll_strictly_positive": true,
+    "sst_physical_scenario_range": true,
+    "current_speed_nonnegative": true,
+    "sst_front_nonnegative_finite": true,
+    "habitat_index_yft_in_unit_interval": true,
+    "habitat_index_skipjack_in_unit_interval": true,
+    "synthetic_probability_yft_in_unit_interval": true,
+    "synthetic_probability_skipjack_in_unit_interval": true,
+    "all_galle_distances_positive": true,
+    "distance_roundtrip_formula": true,
+    "fuel_cost_formula": true,
+    "proper_knots_to_kmh_conversion": true,
+    "time_split_counts_29_7_7": true,
+    "target_date_no_overlap": true,
+    "tensor_X_shape_43_7_100_5": true,
+    "tensor_y_shape_43_100_2": true,
+    "train_only_standardization": true,
+    "adjacency_row_stochastic": true,
+    "unique_grid_id_per_row": true,
+    "pareto_matches_yellowfin_P_GALLE": true,
+    "pareto_matches_yellowfin_P_MIRISSA": true,
+    "pareto_matches_yellowfin_P_TANGALLE": true,
+    "pareto_matches_skipjack_P_GALLE": true,
+    "pareto_matches_skipjack_P_MIRISSA": true,
+    "pareto_matches_skipjack_P_TANGALLE": true,
+    "no_na_or_inf_features": true,
+    "csv_rounded_values_valid": true,
+    "synthetic_status_every_row": true,
+    "nonnegative_transit_and_site_fuel": true,
+    "cost_not_strictly_distance_redundant": true,
+    "front_uses_physical_km": true,
+    "species_scores_not_identical": true
+  },
+  "baseline_metrics": {
+    "yellowfin": {
+      "persistence_baseline_test_MAE": 0.0148001,
+      "persistence_baseline_test_RMSE": 0.0206303
+    },
+    "skipjack": {
+      "persistence_baseline_test_MAE": 0.0186797,
+      "persistence_baseline_test_RMSE": 0.0264151
+    }
+  },
+  "summary": {
+    "sst_c_min_max": [
+      26.992,
+      29.045
+    ],
+    "chl_mg_m3_min_max": [
+      0.08,
+      0.762
+    ],
+    "current_ms_min_max": [
+      0.003,
+      0.245
+    ],
+    "front_c_per_km_min_max": [
+      0.00054,
+      0.07858
+    ],
+    "yft_suitability_min_max": [
+      0.604,
+      0.886
+    ],
+    "skipjack_suitability_min_max": [
+      0.538,
+      0.876
+    ],
+    "galle_oneway_km_min_max": [
+      35.2,
+      125.8
+    ],
+    "galle_fuel_cost_lkr_min_max": [
+      11070.0,
+      34512.0
+    ]
+  },
+  "warning": "All QA checks are internal mathematical/computational validations, NOT empirical catch accuracy or sea-navigation validation."
+}

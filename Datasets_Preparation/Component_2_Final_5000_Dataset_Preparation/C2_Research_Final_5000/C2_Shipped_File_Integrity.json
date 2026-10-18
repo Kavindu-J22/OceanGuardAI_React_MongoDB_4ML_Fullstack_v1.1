@@ -1,0 +1,70 @@
+{
+  "C2_Master_5000_ZoneDays.csv": {
+    "bytes": 1941362,
+    "sha256": "f42527fe2809b31cb7a70287f73eb96ec3159dbc4753065358466c1f40e09e53"
+  },
+  "C2_Dataset_Justification_Sinhala.docx": {
+    "bytes": 189132,
+    "sha256": "a33741165c003c5f5648ab70080cb4fa2cbafbe12506fdc05a9c39c7b0df68e4"
+  },
+  "C2_STGCN_Model_Ready_43_Windows.npz": {
+    "bytes": 157027,
+    "sha256": "9a5ea416c6597fb0901a15ecb259c59bd47387a3405a32ecf3fd73675f868211"
+  },
+  "C2_Zone_Registry_100.csv": {
+    "bytes": 9885,
+    "sha256": "9c9548225f33ba956cf86d011934870a65f85daccf7e90343895b8fa4809be2c"
+  },
+  "C2_Graph_Edges_360.csv": {
+    "bytes": 11338,
+    "sha256": "1aaf8ee37a89e831df97ff5e25c9afca63d4fce645ad438381a02dbeca6f22e9"
+  },
+  "C2_Port_Scenarios.csv": {
+    "bytes": 165,
+    "sha256": "f704619cfc99d40a1e85f1a9b9b9921bf99f79b04edd5d24c0c6331d896f55f0"
+  },
+  "C2_Pareto_Example_Recommendations.csv": {
+    "bytes": 3925,
+    "sha256": "0369b7db2f8cf0355fffafdbb09b8ee9f8496d1c085e14fc277d902de5765968"
+  },
+  "C2_Data_Dictionary.csv": {
+    "bytes": 2988,
+    "sha256": "475ef5531658d3d6029f0a8d225cbbfead8f407b6ee321f8819f89bd9961d837"
+  },
+  "C2_Method_Provenance_and_Parameters.json": {
+    "bytes": 6060,
+    "sha256": "6e5cee97b0b8fe9aa52dae30534ccf0cfbdb7aadfb9eb32a09d622996dac7524"
+  },
+  "C2_Independent_QA_and_Baseline.json": {
+    "bytes": 2856,
+    "sha256": "d930272a9d4678cf9d63d9c7d98c69f5afde8c575ab5940af49102035887d02a"
+  },
+  "C2_External_Recalculation_QA.json": {
+    "bytes": 1775,
+    "sha256": "36942042f95c3c584c9cf3387124ffa2d7fa7a23e9ace3a450a40227d1dc833a"
+  },
+  "C2_Simulated_Suitability_Heatmap.png": {
+    "bytes": 55052,
+    "sha256": "fea58b2fa55411e84ce73a0f1105e2fd11d1ec197775c6aca6f621a4917bf9dd"
+  },
+  "C2_Simulated_TimeSeries.png": {
+    "bytes": 99919,
+    "sha256": "b0d8c3373df5f9e10d5dced1e0bf482b729f34a642c777cf07507563a84e99e4"
+  },
+  "generate_c2.py": {
+    "bytes": 29985,
+    "sha256": "7600391cdcaf8b21667440f5ebc340f0406a0eae32c9097091576b0aa667df54"
+  },
+  "validate_c2.py": {
+    "bytes": 7200,
+    "sha256": "1c46fe0854fffabf176122965b43331c060616893278df11147a5141841165a2"
+  },
+  "create_sinhala_document.py": {
+    "bytes": 30876,
+    "sha256": "89097bef72b6194463c6b466e25eab63598128cd19d114a5933b99476975191c"
+  },
+  "README_FIRST.md": {
+    "bytes": 2008,
+    "sha256": "5b1059abddcea49229e245f0bc46a072ce0a57c4341e8f006746cafecc574f37"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "validation_class": "internal_arithmetic_and_physics_model_consistency_ONLY",
+  "n_records": 5000,
+  "n_legs": 10000,
+  "n_vessels": 250,
+  "split_trips": {
+    "train": 3459,
+    "test": 825,
+    "validation": 716
+  },
+  "split_vessels": {
+    "train": 175,
+    "validation": 37,
+    "test": 38
+  },
+  "boat_types": {
+    "OFRP": 2675,
+    "IDAY": 1383,
+    "IMUL": 942
+  },
+  "power_limited_trips": 1169,
+  "fuel_l_statistics": {
+    "min": 2.31553,
+    "median": 29.576504999999997,
+    "p95": 1289.5311230000007,
+    "max": 3626.28121
+  },
+  "validation_checks": [
+    "5000_trip_records",
+    "10000_leg_records",
+    "250_unique_vessels",
+    "unique_ids",
+    "C1_links_one_to_one",
+    "C2_zone_spatial_links",
+    "fuel_leg_recomputation",
+    "total_fuel_balance",
+    "reserve_arithmetic",
+    "trip_time_balance",
+    "resistance_force_balance",
+    "mechanical_effective_power_RV",
+    "engine_power_cap",
+    "positive_fuel",
+    "sensitivity_envelopes",
+    "disjoint_vessel_splits",
+    "speed_resistance_monotonicity_fixed_params",
+    "wave_added_drag_monotonicity_fixed_params",
+    "mass_residuary_monotonicity_fixed_params"
+  ],
+  "external_validation": "NOT_PERFORMED_NO_MEASURED_FUEL",
+  "notes": "The 19 listed check categories cover thousands of per-record assertions; passing these does not validate physical correctness of heuristics."
+}

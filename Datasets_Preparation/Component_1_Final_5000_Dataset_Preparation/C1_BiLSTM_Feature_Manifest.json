@@ -1,0 +1,101 @@
+{
+  "weather_shape": [
+    5000,
+    12,
+    10
+  ],
+  "static_shape": [
+    5000,
+    11
+  ],
+  "weather_features": [
+    "wind_speed_10m_ms",
+    "wind_gust_proxy_ms",
+    "significant_wave_height_m",
+    "wave_peak_period_s",
+    "sea_level_pressure_hpa",
+    "pressure_change_3h_hpa",
+    "visibility_km",
+    "rainfall_mm_h",
+    "wave_steepness",
+    "gust_lateral_force_proxy_n"
+  ],
+  "static_features": [
+    "vessel_length_m",
+    "vessel_beam_m",
+    "lightship_mass_kg",
+    "payload_mass_kg",
+    "assumed_payload_limit_kg",
+    "payload_limit_ratio",
+    "estimated_loaded_freeboard_m",
+    "planned_trip_duration_h",
+    "type_OFRP",
+    "type_IDAY",
+    "type_IMUL"
+  ],
+  "label_mapping": {
+    "Safe": 0,
+    "Caution": 1,
+    "Danger": 2
+  },
+  "scaling": "z-score numeric features; fit train split ONLY; one-hot type left unscaled",
+  "chronological_split_counts": {
+    "train": 3500,
+    "validation": 750,
+    "test": 750
+  },
+  "weather_train_mean": [
+    10.074092309523902,
+    12.649697452380982,
+    1.215115642857142,
+    7.045491952380932,
+    1009.8023466190468,
+    -0.1320376666666659,
+    11.737598714285667,
+    2.54511030952381,
+    0.015234175238095156,
+    1479.8969326666622
+  ],
+  "weather_train_std": [
+    5.682581145942136,
+    7.186655501414583,
+    0.6954688171319503,
+    1.2713270458675332,
+    4.6285858450500905,
+    0.8899553314420647,
+    1.8049422021001622,
+    3.222590152642187,
+    0.007142588400423409,
+    2065.1822185776778
+  ],
+  "static_train_mean": [
+    9.453582571428607,
+    2.806627714285703,
+    4668.48131,
+    2256.3258102857176,
+    3336.952238571417,
+    0.67339857142857,
+    1.0837905714285747,
+    30.5659114285715
+  ],
+  "static_train_std": [
+    3.485836078726781,
+    0.9402512290282109,
+    6028.146812200684,
+    2835.991553915368,
+    3683.39129272687,
+    0.2680923375005906,
+    0.40263806770876115,
+    39.249021210698615
+  ],
+  "leakage_excluded": [
+    "instantaneous_heuristic_risk",
+    "heuristic_dri_score from inputs",
+    "proxy_risk_label from inputs",
+    "scenario_sampling_stratum",
+    "sensitivity bounds",
+    "label provenance",
+    "date timestamp as an identifier"
+  ],
+  "note": "Targets are synthetic heuristic labels. Model accuracy vs these targets does not measure real maritime safety."
+}

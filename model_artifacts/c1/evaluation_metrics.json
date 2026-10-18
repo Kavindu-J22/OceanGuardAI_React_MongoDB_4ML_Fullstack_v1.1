@@ -1,0 +1,95 @@
+{
+  "component": "C1_Safety_Prediction",
+  "architecture": "Bidirectional LSTM with Additive Temporal Attention",
+  "test_accuracy": 0.956,
+  "test_dri_mae": 1.979856201171875,
+  "best_val_loss": 0.20960956978797912,
+  "epochs_trained": 10,
+  "classes": [
+    "Safe",
+    "Caution",
+    "Danger"
+  ],
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 2.8497851160594396,
+      "train_acc": 0.4957142857142857,
+      "val_loss": 1.1303003177642823,
+      "val_acc": 0.9093333333333333,
+      "val_dri_mae": 4.420115824381511
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.0096183351108006,
+      "train_acc": 0.9177142857142857,
+      "val_loss": 0.7177453180948893,
+      "val_acc": 0.9306666666666666,
+      "val_dri_mae": 3.0158497517903644
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.7580387200628008,
+      "train_acc": 0.914,
+      "val_loss": 0.5027280019124349,
+      "val_acc": 0.892,
+      "val_dri_mae": 2.5344466552734377
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.5864065890993391,
+      "train_acc": 0.8962857142857142,
+      "val_loss": 0.36987704690297446,
+      "val_acc": 0.904,
+      "val_dri_mae": 2.493897379557292
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.4658824885232108,
+      "train_acc": 0.9077142857142857,
+      "val_loss": 0.2972583522001902,
+      "val_acc": 0.912,
+      "val_dri_mae": 2.5794461466471352
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.4310512364251273,
+      "train_acc": 0.9214285714285714,
+      "val_loss": 0.2720150714715322,
+      "val_acc": 0.908,
+      "val_dri_mae": 2.307840057373047
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.4066078211920602,
+      "train_acc": 0.9188571428571428,
+      "val_loss": 0.2671963657538096,
+      "val_acc": 0.92,
+      "val_dri_mae": 2.356859364827474
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.38490369602612085,
+      "train_acc": 0.93,
+      "val_loss": 0.2403056546052297,
+      "val_acc": 0.94,
+      "val_dri_mae": 2.148013346354167
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.3535822781494686,
+      "train_acc": 0.9277142857142857,
+      "val_loss": 0.20960956978797912,
+      "val_acc": 0.9426666666666667,
+      "val_dri_mae": 1.9349601440429687
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.36368145516940525,
+      "train_acc": 0.9297142857142857,
+      "val_loss": 0.301042684396108,
+      "val_acc": 0.8946666666666667,
+      "val_dri_mae": 3.0467212524414062
+    }
+  ]
+}

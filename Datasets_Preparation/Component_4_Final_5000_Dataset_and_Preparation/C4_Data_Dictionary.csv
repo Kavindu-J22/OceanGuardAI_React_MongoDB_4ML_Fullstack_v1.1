@@ -1,0 +1,65 @@
+﻿column,units,definition,origin_and_status
+scenario_id,as_named_or_dimensionless,scenario id,Synthetic assumption / scenario descriptor
+c1_trip_id,as_named_or_dimensionless,c1 trip id,C1 synthetic source: trip/vessel
+c1_record_date_local,as_named_or_dimensionless,c1 record date local,C1 synthetic source: trip/vessel
+vessel_id,as_named_or_dimensionless,vessel id,C1 synthetic source: trip/vessel
+vessel_type,as_named_or_dimensionless,vessel type,C1 synthetic source: trip/vessel
+c1_zone_id,as_named_or_dimensionless,c1 zone id,C1 synthetic source: trip/vessel
+c2_spatial_nearest_zone_id,as_named_or_dimensionless,c2 spatial nearest zone id,C2 zone registry spatial-only reference
+c2_zone_spatial_offset_km,as_named_or_dimensionless,c2 zone spatial offset km,C2 zone registry spatial-only reference
+zone_link_scope,as_named_or_dimensionless,zone link scope,Synthetic assumption / scenario descriptor
+vessel_length_m,as_named_or_dimensionless,vessel length m,C1 synthetic source: trip/vessel
+vessel_beam_m,as_named_or_dimensionless,vessel beam m,C1 synthetic source: trip/vessel
+block_coefficient_assumed,as_named_or_dimensionless,block coefficient assumed,Synthetic assumption / scenario descriptor
+lightship_mass_kg,as_named_or_dimensionless,lightship mass kg,C1 synthetic source: trip/vessel
+payload_mass_kg,as_named_or_dimensionless,payload mass kg,C1 synthetic source: trip/vessel
+displacement_mass_kg,as_named_or_dimensionless,displacement mass kg,C1 synthetic source: trip/vessel
+loaded_draft_m_approx,as_named_or_dimensionless,loaded draft m approx,Model derived using assumptions and literature-motivated equations
+wetted_surface_m2_approx,as_named_or_dimensionless,wetted surface m2 approx,Model derived using assumptions and literature-motivated equations
+engine_rated_hp_assumed,as_named_or_dimensionless,engine rated hp assumed,Synthetic assumption / scenario descriptor
+engine_rated_kw_assumed,as_named_or_dimensionless,engine rated kw assumed,Synthetic assumption / scenario descriptor
+engine_age_years_assumed,as_named_or_dimensionless,engine age years assumed,Synthetic assumption / scenario descriptor
+engine_continuous_limit_kw_assumed,as_named_or_dimensionless,engine continuous limit kw assumed,Synthetic assumption / scenario descriptor
+propulsive_efficiency_assumed,as_named_or_dimensionless,propulsive efficiency assumed,Synthetic assumption / scenario descriptor
+bsfc_optimum_kg_kwh_assumed,as_named_or_dimensionless,bsfc optimum kg kwh assumed,Synthetic assumption / scenario descriptor
+maintenance_factor_assumed,as_named_or_dimensionless,maintenance factor assumed,Synthetic assumption / scenario descriptor
+forecast_wave_hs_m_c1_synthetic,as_named_or_dimensionless,forecast wave hs m c1 synthetic,C1 synthetic source: trip/vessel
+wave_peak_period_s_c1_synthetic,as_named_or_dimensionless,wave peak period s c1 synthetic,C1 synthetic source: trip/vessel
+forecast_wind_speed_ms_c1_synthetic,as_named_or_dimensionless,forecast wind speed ms c1 synthetic,C1 synthetic source: trip/vessel
+wave_heading_cos_synthetic,as_named_or_dimensionless,wave heading cos synthetic,Synthetic assumption / scenario descriptor
+wind_heading_cos_synthetic,as_named_or_dimensionless,wind heading cos synthetic,Synthetic assumption / scenario descriptor
+along_current_outbound_ms_assumed,as_named_or_dimensionless,along current outbound ms assumed,Synthetic assumption / scenario descriptor
+planned_duration_h_c1,as_named_or_dimensionless,planned duration h c1,C1 synthetic source: trip/vessel
+travel_oneway_distance_nm_scenario,as_named_or_dimensionless,travel oneway distance nm scenario,Research-only simulated scenario: NOT deployment limit
+travel_roundtrip_distance_km_scenario,as_named_or_dimensionless,travel roundtrip distance km scenario,Research-only simulated scenario: NOT deployment limit
+planned_outbound_hours,as_named_or_dimensionless,planned outbound hours,Synthetic assumption / scenario descriptor
+planned_inbound_hours,as_named_or_dimensionless,planned inbound hours,Synthetic assumption / scenario descriptor
+fishing_operations_hours,as_named_or_dimensionless,fishing operations hours,Synthetic assumption / scenario descriptor
+outbound_speed_kn_model,as_named_or_dimensionless,outbound speed kn model,Model derived using assumptions and literature-motivated equations
+inbound_speed_kn_model,as_named_or_dimensionless,inbound speed kn model,Model derived using assumptions and literature-motivated equations
+outbound_effective_power_kw,as_named_or_dimensionless,outbound effective power kw,Synthetic assumption / scenario descriptor
+inbound_effective_power_kw,as_named_or_dimensionless,inbound effective power kw,Synthetic assumption / scenario descriptor
+outbound_brake_power_kw,as_named_or_dimensionless,outbound brake power kw,Synthetic assumption / scenario descriptor
+inbound_brake_power_kw,as_named_or_dimensionless,inbound brake power kw,Synthetic assumption / scenario descriptor
+outbound_friction_n,as_named_or_dimensionless,outbound friction n,Model derived using assumptions and literature-motivated equations
+outbound_residuary_heuristic_n,as_named_or_dimensionless,outbound residuary heuristic n,Model derived using assumptions and literature-motivated equations
+outbound_wave_resistance_heuristic_n,as_named_or_dimensionless,outbound wave resistance heuristic n,Model derived using assumptions and literature-motivated equations
+outbound_air_resistance_n,as_named_or_dimensionless,outbound air resistance n,Model derived using assumptions and literature-motivated equations
+outbound_total_resistance_n,as_named_or_dimensionless,outbound total resistance n,Model derived using assumptions and literature-motivated equations
+transit_fuel_l_model,L,transit fuel l model,Model derived using assumptions and literature-motivated equations
+fishing_auxiliary_kw_model,as_named_or_dimensionless,fishing auxiliary kw model,Model derived using assumptions and literature-motivated equations
+fishing_fuel_l_model,L,fishing fuel l model,Model derived using assumptions and literature-motivated equations
+fuel_consumption_l_model,L,fuel consumption l model,Model derived using assumptions and literature-motivated equations
+sensitivity_low_l_scenario,L,sensitivity low l scenario,Research-only simulated scenario: NOT deployment limit
+sensitivity_high_l_scenario,L,sensitivity high l scenario,Research-only simulated scenario: NOT deployment limit
+reserve_fraction_assumed_research_only,as_named_or_dimensionless,reserve fraction assumed research only,Synthetic assumption / scenario descriptor
+reserve_fuel_l_scenario,L,reserve fuel l scenario,Research-only simulated scenario: NOT deployment limit
+fuel_plus_reserve_l_scenario,L,fuel plus reserve l scenario,Research-only simulated scenario: NOT deployment limit
+available_fuel_l_simulated,L,available fuel l simulated,Synthetic assumption / scenario descriptor
+fuel_comparison_flag_research_only,as_named_or_dimensionless,fuel comparison flag research only,Synthetic assumption / scenario descriptor
+speed_limited_on_any_leg,as_named_or_dimensionless,speed limited on any leg,Synthetic assumption / scenario descriptor
+dataset_split_vessel_group,as_named_or_dimensionless,dataset split vessel group,Synthetic assumption / scenario descriptor
+measured_fuel_l,as_named_or_dimensionless,measured fuel l,Intentionally blank: NO observed fuel telemetry
+fuel_target_provenance,as_named_or_dimensionless,fuel target provenance,Synthetic assumption / scenario descriptor
+confidence_status,as_named_or_dimensionless,confidence status,Synthetic assumption / scenario descriptor
+operational_use,as_named_or_dimensionless,operational use,Synthetic assumption / scenario descriptor

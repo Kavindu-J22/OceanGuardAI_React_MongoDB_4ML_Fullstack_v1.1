@@ -1,0 +1,35 @@
+﻿column_name,meaning,source_class,unit
+record_id,Unique spatial-day record key,synthetic,id
+date_utc,"Simulation day, not actual observation time",synthetic,date
+zone_id,Synthetic 10x10 zone identifier,synthetic,id
+zone_latitude_deg,"Synthetic offshore grid coordinate, NOT safe/legal coordinate",synthetic,WGS84 decimal degree
+zone_longitude_deg,"Synthetic offshore grid coordinate, NOT safe/legal coordinate",synthetic,WGS84 decimal degree
+c1_nearest_centroid_id,Nearest C1 schematic zone centroid; spatial crosswalk only,calculated,id
+sst_c,Synthetic sea surface temperature,synthetic,degC
+chlorophyll_a_mg_m3,Synthetic chlorophyll-a pigment concentration,synthetic,mg/m3
+ocean_current_u_ms,"East current, streamfunction derivative",physics_scenario,m/s
+ocean_current_v_ms,"North current, streamfunction derivative",physics_scenario,m/s
+ocean_current_speed_ms,Hypotenuse of horizontal current vector,calculated,m/s
+sst_front_gradient_c_per_km,Central-difference SST horizontal gradient magnitude,calculated,degC/km
+yft_temperature_response,Heuristic species response term,heuristic,0..1
+yft_food_response,Heuristic species response term,heuristic,0..1
+yft_habitat_suitability_index,"Uncalibrated yellowfin ecological proxy, 0-1, NOT catch probability",heuristic,unitless
+yft_synthetic_uncalibrated_probability,"Synthetic sigmoid rescaling, NOT empirical probability",heuristic,unitless
+skipjack_temperature_response,Heuristic species response term,heuristic,0..1
+skipjack_food_response,Heuristic species response term,heuristic,0..1
+skipjack_habitat_suitability_index,"Uncalibrated skipjack ecological proxy, 0-1, NOT catch probability",heuristic,unitless
+skipjack_synthetic_uncalibrated_probability,"Synthetic sigmoid rescaling, NOT empirical probability",heuristic,unitless
+galle_great_circle_km,"Great-circle straight-line distance, no marine routing or hazards",calculated,km
+mirissa_great_circle_km,Great-circle straight-line distance,calculated,km
+tangalle_great_circle_km,Great-circle straight-line distance,calculated,km
+galle_estimated_oneway_route_km,Great-circle x assumed 1.15 route factor,scenario,km
+galle_roundtrip_km,2 times oneway route proxy,scenario,km
+galle_travel_time_h,Roundtrip / assumed ground speed,scenario,hours
+galle_scenario_transit_fuel_l,Transit hours x assumed 6 liters/hour,scenario,liter
+galle_scenario_site_fuel_l,Four assumed on-site hours times idle+current sensitivity,scenario,liter
+galle_scenario_fuel_l,Transit fuel plus assumed on-site fuel; C4 replaces,scenario,liter
+galle_scenario_fuel_cost_lkr,Fuel liters x assumed LKR 300/liter; NOT retail market quote,scenario,LKR
+time_split,context_only/train/validation/test chronological split,calculated,category
+environment_provenance,Explicit scenario or provenance field,scenario,text
+catch_label_provenance,Distinguishes synthetic rule target from actual catch data,provenance,category
+navigation_status,Explicit scenario or provenance field,scenario,text

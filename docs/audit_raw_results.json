@@ -1,0 +1,1598 @@
+{
+  "files": {
+    "c1_trips.csv": {
+      "filename": "c1_trips.csv",
+      "rows": 5000,
+      "columns_count": 42,
+      "columns": [
+        "trip_id",
+        "decision_timestamp_local",
+        "year",
+        "month",
+        "zone_id",
+        "zone_description",
+        "zone_lat",
+        "zone_lon",
+        "vessel_id",
+        "vessel_type",
+        "vessel_length_m",
+        "vessel_beam_m",
+        "lightship_mass_kg",
+        "payload_mass_kg",
+        "total_displacement_mass_proxy_kg",
+        "assumed_payload_limit_kg",
+        "payload_limit_ratio",
+        "assumed_lightship_freeboard_m",
+        "estimated_extra_draft_m",
+        "estimated_loaded_draft_m",
+        "estimated_loaded_freeboard_m",
+        "planned_trip_duration_h",
+        "forecast_window_steps",
+        "worst_forecast_step_index",
+        "forecast_max_wind_ms",
+        "forecast_max_gust_ms",
+        "forecast_max_wave_height_m",
+        "forecast_min_pressure_hpa",
+        "forecast_min_visibility_km",
+        "worst_wave_peak_period_s",
+        "worst_wave_steepness",
+        "worst_lateral_wind_force_proxy_n",
+        "heuristic_dri_score",
+        "sensitivity_p05_dri_score",
+        "sensitivity_p95_dri_score",
+        "proxy_risk_label",
+        "dominant_proxy_risk_factor",
+        "scenario_sampling_stratum",
+        "dataset_split",
+        "label_provenance",
+        "weather_provenance",
+        "vessel_provenance"
+      ],
+      "dtypes": {
+        "trip_id": "object",
+        "decision_timestamp_local": "object",
+        "year": "int64",
+        "month": "int64",
+        "zone_id": "object",
+        "zone_description": "object",
+        "zone_lat": "float64",
+        "zone_lon": "float64",
+        "vessel_id": "object",
+        "vessel_type": "object",
+        "vessel_length_m": "float64",
+        "vessel_beam_m": "float64",
+        "lightship_mass_kg": "float64",
+        "payload_mass_kg": "float64",
+        "total_displacement_mass_proxy_kg": "float64",
+        "assumed_payload_limit_kg": "float64",
+        "payload_limit_ratio": "float64",
+        "assumed_lightship_freeboard_m": "float64",
+        "estimated_extra_draft_m": "float64",
+        "estimated_loaded_draft_m": "float64",
+        "estimated_loaded_freeboard_m": "float64",
+        "planned_trip_duration_h": "float64",
+        "forecast_window_steps": "int64",
+        "worst_forecast_step_index": "int64",
+        "forecast_max_wind_ms": "float64",
+        "forecast_max_gust_ms": "float64",
+        "forecast_max_wave_height_m": "float64",
+        "forecast_min_pressure_hpa": "float64",
+        "forecast_min_visibility_km": "float64",
+        "worst_wave_peak_period_s": "float64",
+        "worst_wave_steepness": "float64",
+        "worst_lateral_wind_force_proxy_n": "float64",
+        "heuristic_dri_score": "float64",
+        "sensitivity_p05_dri_score": "float64",
+        "sensitivity_p95_dri_score": "float64",
+        "proxy_risk_label": "object",
+        "dominant_proxy_risk_factor": "object",
+        "scenario_sampling_stratum": "object",
+        "dataset_split": "object",
+        "label_provenance": "object",
+        "weather_provenance": "object",
+        "vessel_provenance": "object"
+      },
+      "null_counts": {},
+      "numeric_summary": {
+        "year": {
+          "min": 2023.0,
+          "max": 2025.0,
+          "mean": 2023.9476,
+          "std": 0.8060919282807439
+        },
+        "month": {
+          "min": 1.0,
+          "max": 12.0,
+          "mean": 6.48,
+          "std": 3.470102062139431
+        },
+        "zone_lat": {
+          "min": 5.58,
+          "max": 9.88,
+          "mean": 7.206148,
+          "std": 1.360054319373432
+        },
+        "zone_lon": {
+          "min": 79.28,
+          "max": 82.2,
+          "mean": 80.37906600000001,
+          "std": 1.0483971456270715
+        },
+        "vessel_length_m": {
+          "min": 5.436,
+          "max": 19.534,
+          "mean": 9.4222898,
+          "std": 3.4728842611918824
+        },
+        "vessel_beam_m": {
+          "min": 1.658,
+          "max": 5.219,
+          "mean": 2.7994598,
+          "std": 0.9348186617574737
+        },
+        "lightship_mass_kg": {
+          "min": 459.225,
+          "max": 21727.72,
+          "mean": 4590.4535684,
+          "std": 5937.849006686072
+        },
+        "payload_mass_kg": {
+          "min": 61.669,
+          "max": 18104.209,
+          "mean": 2206.8389382,
+          "std": 2780.519004358775
+        },
+        "total_displacement_mass_proxy_kg": {
+          "min": 580.997,
+          "max": 37382.679,
+          "mean": 6797.2925066,
+          "std": 8285.296606545235
+        },
+        "assumed_payload_limit_kg": {
+          "min": 453.845,
+          "max": 14761.062,
+          "mean": 3286.541884,
+          "std": 3628.6347649607233
+        },
+        "payload_limit_ratio": {
+          "min": 0.12,
+          "max": 1.259,
+          "mean": 0.6705878,
+          "std": 0.2681746136677429
+        },
+        "assumed_lightship_freeboard_m": {
+          "min": 0.621,
+          "max": 2.34,
+          "mean": 1.158419,
+          "std": 0.41796061351985164
+        },
+        "estimated_extra_draft_m": {
+          "min": 0.006,
+          "max": 0.366,
+          "mean": 0.0794166,
+          "std": 0.0497984158471349
+        },
+        "estimated_loaded_draft_m": {
+          "min": 0.08,
+          "max": 1.164,
+          "mean": 0.3558658,
+          "std": 0.1738389616492156
+        },
+        "estimated_loaded_freeboard_m": {
+          "min": 0.479,
+          "max": 2.326,
+          "mean": 1.0790024,
+          "std": 0.40120963825537115
+        },
+        "planned_trip_duration_h": {
+          "min": 4.0,
+          "max": 160.0,
+          "mean": 30.234122000000003,
+          "std": 38.80689473849931
+        },
+        "forecast_window_steps": {
+          "min": 12.0,
+          "max": 12.0,
+          "mean": 12.0,
+          "std": 0.0
+        },
+        "worst_forecast_step_index": {
+          "min": 0.0,
+          "max": 11.0,
+          "mean": 5.763,
+          "std": 3.6146153445170017
+        },
+        "forecast_max_wind_ms": {
+          "min": 1.077,
+          "max": 30.06,
+          "mean": 12.021401,
+          "std": 5.673479045479493
+        },
+        "forecast_max_gust_ms": {
+          "min": 1.268,
+          "max": 39.693,
+          "mean": 15.511216000000001,
+          "std": 7.458596291600197
+        },
+        "forecast_max_wave_height_m": {
+          "min": 0.18,
+          "max": 4.335,
+          "mean": 1.4338436,
+          "std": 0.7472612326415721
+        },
+        "forecast_min_pressure_hpa": {
+          "min": 972.632,
+          "max": 1022.787,
+          "mean": 1008.3563874,
+          "std": 4.726693190828581
+        },
+        "forecast_min_visibility_km": {
+          "min": 0.35,
+          "max": 13.002,
+          "mean": 9.1436042,
+          "std": 2.0587375189607724
+        },
+        "worst_wave_peak_period_s": {
+          "min": 4.0,
+          "max": 11.166,
+          "mean": 6.7695534,
+          "std": 1.3161899701623436
+        },
+        "worst_wave_steepness": {
+          "min": 0.00063,
+          "max": 0.07954,
+          "mean": 0.019548178000000003,
+          "std": 0.00874887419844771
+        },
+        "worst_lateral_wind_force_proxy_n": {
+          "min": 0.557,
+          "max": 22980.526,
+          "mean": 1950.3694189999997,
+          "std": 2490.597057603183
+        },
+        "heuristic_dri_score": {
+          "min": 0.448,
+          "max": 80.685,
+          "mean": 26.323383999999997,
+          "std": 15.743544293796429
+        },
+        "sensitivity_p05_dri_score": {
+          "min": 0.322,
+          "max": 73.644,
+          "mean": 23.479064,
+          "std": 14.537447656352068
+        },
+        "sensitivity_p95_dri_score": {
+          "min": 0.698,
+          "max": 84.1,
+          "mean": 29.179422199999994,
+          "std": 16.658464054722444
+        }
+      },
+      "categorical_summary": {
+        "trip_id": {
+          "unique_count": 5000,
+          "top_values": {
+            "C1T00001": 1,
+            "C1T03331": 1,
+            "C1T03338": 1,
+            "C1T03337": 1,
+            "C1T03336": 1,
+            "C1T03335": 1,
+            "C1T03334": 1,
+            "C1T03333": 1,
+            "C1T03332": 1,
+            "C1T03330": 1
+          }
+        },
+        "decision_timestamp_local": {
+          "unique_count": 4387,
+          "top_values": {
+            "2023-12-30T05:00:00": 4,
+            "2024-08-31T03:00:00": 4,
+            "2023-12-18T16:00:00": 4,
+            "2025-07-25T11:00:00": 4,
+            "2024-02-22T03:00:00": 3,
+            "2023-09-27T04:00:00": 3,
+            "2023-04-08T11:00:00": 3,
+            "2025-06-27T18:00:00": 3,
+            "2024-05-26T05:00:00": 3,
+            "2024-04-02T03:00:00": 3
+          }
+        },
+        "zone_id": {
+          "unique_count": 10,
+          "top_values": {
+            "Z04": 523,
+            "Z01": 514,
+            "Z05": 514,
+            "Z10": 512,
+            "Z02": 507,
+            "Z03": 504,
+            "Z06": 495,
+            "Z07": 483,
+            "Z09": 483,
+            "Z08": 465
+          }
+        },
+        "zone_description": {
+          "unique_count": 10,
+          "top_values": {
+            "Beruwala Offshore": 523,
+            "Negombo Offshore": 514,
+            "Galle Offshore": 514,
+            "Point Pedro Offshore": 512,
+            "Kalpitiya Offshore": 507,
+            "Colombo Offshore": 504,
+            "Matara Offshore": 495,
+            "Hambantota Offshore": 483,
+            "Batticaloa Offshore": 483,
+            "Trincomalee Offshore": 465
+          }
+        },
+        "vessel_id": {
+          "unique_count": 250,
+          "top_values": {
+            "V121": 39,
+            "V206": 35,
+            "V136": 34,
+            "V162": 32,
+            "V205": 32,
+            "V149": 32,
+            "V108": 31,
+            "V003": 31,
+            "V197": 31,
+            "V199": 30
+          }
+        },
+        "vessel_type": {
+          "unique_count": 3,
+          "top_values": {
+            "OFRP": 2675,
+            "IDAY": 1383,
+            "IMUL": 942
+          }
+        },
+        "proxy_risk_label": {
+          "unique_count": 3,
+          "top_values": {
+            "Safe": 3685,
+            "Caution": 1218,
+            "Danger": 97
+          }
+        },
+        "dominant_proxy_risk_factor": {
+          "unique_count": 9,
+          "top_values": {
+            "gust_exposure": 2194,
+            "wave_length_exposure": 1549,
+            "payload_exposure": 1101,
+            "wave_freeboard_exposure": 73,
+            "wave_steepness_exposure": 55,
+            "visibility_exposure": 10,
+            "rain_exposure": 9,
+            "pressure_tendency_exposure": 6,
+            "wind_force_exposure": 3
+          }
+        },
+        "scenario_sampling_stratum": {
+          "unique_count": 4,
+          "top_values": {
+            "moderate": 1718,
+            "rough": 1374,
+            "calm": 1198,
+            "severe": 710
+          }
+        },
+        "dataset_split": {
+          "unique_count": 3,
+          "top_values": {
+            "train": 3500,
+            "validation": 750,
+            "test": 750
+          }
+        },
+        "label_provenance": {
+          "unique_count": 1,
+          "top_values": {
+            "rule_based_synthetic_proxy_not_incident_ground_truth": 5000
+          }
+        },
+        "weather_provenance": {
+          "unique_count": 1,
+          "top_values": {
+            "synthetic_forecast_not_observed": 5000
+          }
+        },
+        "vessel_provenance": {
+          "unique_count": 1,
+          "top_values": {
+            "synthetic_design_not_measured": 5000
+          }
+        }
+      }
+    },
+    "c2_zone_days.csv": {
+      "filename": "c2_zone_days.csv",
+      "rows": 5000,
+      "columns_count": 34,
+      "columns": [
+        "record_id",
+        "date_utc",
+        "zone_id",
+        "zone_latitude_deg",
+        "zone_longitude_deg",
+        "c1_nearest_centroid_id",
+        "sst_c",
+        "chlorophyll_a_mg_m3",
+        "ocean_current_u_ms",
+        "ocean_current_v_ms",
+        "ocean_current_speed_ms",
+        "sst_front_gradient_c_per_km",
+        "yft_temperature_response",
+        "yft_food_response",
+        "yft_habitat_suitability_index",
+        "yft_synthetic_uncalibrated_probability",
+        "skipjack_temperature_response",
+        "skipjack_food_response",
+        "skipjack_habitat_suitability_index",
+        "skipjack_synthetic_uncalibrated_probability",
+        "galle_great_circle_km",
+        "mirissa_great_circle_km",
+        "tangalle_great_circle_km",
+        "galle_estimated_oneway_route_km",
+        "galle_roundtrip_km",
+        "galle_travel_time_h",
+        "galle_scenario_transit_fuel_l",
+        "galle_scenario_site_fuel_l",
+        "galle_scenario_fuel_l",
+        "galle_scenario_fuel_cost_lkr",
+        "time_split",
+        "environment_provenance",
+        "catch_label_provenance",
+        "navigation_status"
+      ],
+      "dtypes": {
+        "record_id": "object",
+        "date_utc": "object",
+        "zone_id": "object",
+        "zone_latitude_deg": "float64",
+        "zone_longitude_deg": "float64",
+        "c1_nearest_centroid_id": "object",
+        "sst_c": "float64",
+        "chlorophyll_a_mg_m3": "float64",
+        "ocean_current_u_ms": "float64",
+        "ocean_current_v_ms": "float64",
+        "ocean_current_speed_ms": "float64",
+        "sst_front_gradient_c_per_km": "float64",
+        "yft_temperature_response": "float64",
+        "yft_food_response": "float64",
+        "yft_habitat_suitability_index": "float64",
+        "yft_synthetic_uncalibrated_probability": "float64",
+        "skipjack_temperature_response": "float64",
+        "skipjack_food_response": "float64",
+        "skipjack_habitat_suitability_index": "float64",
+        "skipjack_synthetic_uncalibrated_probability": "float64",
+        "galle_great_circle_km": "float64",
+        "mirissa_great_circle_km": "float64",
+        "tangalle_great_circle_km": "float64",
+        "galle_estimated_oneway_route_km": "float64",
+        "galle_roundtrip_km": "float64",
+        "galle_travel_time_h": "float64",
+        "galle_scenario_transit_fuel_l": "float64",
+        "galle_scenario_site_fuel_l": "float64",
+        "galle_scenario_fuel_l": "float64",
+        "galle_scenario_fuel_cost_lkr": "float64",
+        "time_split": "object",
+        "environment_provenance": "object",
+        "catch_label_provenance": "object",
+        "navigation_status": "object"
+      },
+      "null_counts": {},
+      "numeric_summary": {
+        "zone_latitude_deg": {
+          "min": 5.22,
+          "max": 5.76,
+          "mean": 5.49,
+          "std": 0.17235411566956454
+        },
+        "zone_longitude_deg": {
+          "min": 79.78,
+          "max": 80.77,
+          "mean": 80.275,
+          "std": 0.3159825453942001
+        },
+        "sst_c": {
+          "min": 26.99208,
+          "max": 29.04514,
+          "mean": 27.999928374,
+          "std": 0.4146011839886725
+        },
+        "chlorophyll_a_mg_m3": {
+          "min": 0.080239,
+          "max": 0.762387,
+          "mean": 0.2743341836,
+          "std": 0.11191998758128563
+        },
+        "ocean_current_u_ms": {
+          "min": -0.116859,
+          "max": 0.244859,
+          "mean": 0.0685541378,
+          "std": 0.07480874410152347
+        },
+        "ocean_current_v_ms": {
+          "min": -0.112572,
+          "max": 0.134787,
+          "mean": 0.0055818468,
+          "std": 0.052462360275195956
+        },
+        "ocean_current_speed_ms": {
+          "min": 0.00252,
+          "max": 0.245069,
+          "mean": 0.10241172120000001,
+          "std": 0.05089365295642788
+        },
+        "sst_front_gradient_c_per_km": {
+          "min": 0.0005393,
+          "max": 0.0785817,
+          "mean": 0.021163093759999998,
+          "std": 0.009977040384610473
+        },
+        "yft_temperature_response": {
+          "min": 0.893292,
+          "max": 1.0,
+          "mean": 0.9826161586000001,
+          "std": 0.020261050520461288
+        },
+        "yft_food_response": {
+          "min": 0.320649,
+          "max": 0.817672,
+          "mean": 0.5942809976,
+          "std": 0.09565631892601183
+        },
+        "yft_habitat_suitability_index": {
+          "min": 0.604223,
+          "max": 0.886477,
+          "mean": 0.7672174256000001,
+          "std": 0.04328070251130449
+        },
+        "yft_synthetic_uncalibrated_probability": {
+          "min": 0.464704,
+          "max": 0.750354,
+          "mean": 0.6389711854,
+          "std": 0.04398559876265787
+        },
+        "skipjack_temperature_response": {
+          "min": 0.671004,
+          "max": 1.0,
+          "mean": 0.9240621151999999,
+          "std": 0.0707881954338383
+        },
+        "skipjack_food_response": {
+          "min": 0.286323,
+          "max": 0.792183,
+          "mean": 0.5561139476,
+          "std": 0.0977396164228843
+        },
+        "skipjack_habitat_suitability_index": {
+          "min": 0.537979,
+          "max": 0.876299,
+          "mean": 0.7223595535999999,
+          "std": 0.05465984455202574
+        },
+        "skipjack_synthetic_uncalibrated_probability": {
+          "min": 0.41009,
+          "max": 0.745408,
+          "mean": 0.6022823058,
+          "std": 0.055596945833701096
+        },
+        "galle_great_circle_km": {
+          "min": 30.5818,
+          "max": 109.4119,
+          "mean": 70.373756,
+          "std": 18.755434884646274
+        },
+        "mirissa_great_circle_km": {
+          "min": 21.11,
+          "max": 110.4568,
+          "mean": 64.65990899999998,
+          "std": 20.574016151639924
+        },
+        "tangalle_great_circle_km": {
+          "min": 29.3964,
+          "max": 143.6594,
+          "mean": 87.763001,
+          "std": 27.103432398961207
+        },
+        "galle_estimated_oneway_route_km": {
+          "min": 35.1691,
+          "max": 125.8237,
+          "mean": 80.929822,
+          "std": 21.56874901834502
+        },
+        "galle_roundtrip_km": {
+          "min": 70.3382,
+          "max": 251.6474,
+          "mean": 161.859639,
+          "std": 43.13749510843699
+        },
+        "galle_travel_time_h": {
+          "min": 4.7475,
+          "max": 16.9848,
+          "mean": 10.92465,
+          "std": 2.911546240711688
+        },
+        "galle_scenario_transit_fuel_l": {
+          "min": 28.4847,
+          "max": 101.909,
+          "mean": 65.547908,
+          "std": 17.469288068042637
+        },
+        "galle_scenario_site_fuel_l": {
+          "min": 8.0806,
+          "max": 15.8422,
+          "mean": 11.2771748,
+          "std": 1.6285967146266562
+        },
+        "galle_scenario_fuel_l": {
+          "min": 36.8985,
+          "max": 115.0408,
+          "mean": 76.82508686,
+          "std": 17.69357137315711
+        },
+        "galle_scenario_fuel_cost_lkr": {
+          "min": 11069.56,
+          "max": 34512.24,
+          "mean": 23047.525751999998,
+          "std": 5308.071359149585
+        }
+      },
+      "categorical_summary": {
+        "record_id": {
+          "unique_count": 5000,
+          "top_values": {
+            "C2R00001": 1,
+            "C2R03331": 1,
+            "C2R03338": 1,
+            "C2R03337": 1,
+            "C2R03336": 1,
+            "C2R03335": 1,
+            "C2R03334": 1,
+            "C2R03333": 1,
+            "C2R03332": 1,
+            "C2R03330": 1
+          }
+        },
+        "date_utc": {
+          "unique_count": 50,
+          "top_values": {
+            "2025-01-01": 100,
+            "2025-02-07": 100,
+            "2025-01-28": 100,
+            "2025-01-29": 100,
+            "2025-01-30": 100,
+            "2025-01-31": 100,
+            "2025-02-01": 100,
+            "2025-02-02": 100,
+            "2025-02-03": 100,
+            "2025-02-04": 100
+          }
+        },
+        "zone_id": {
+          "unique_count": 100,
+          "top_values": {
+            "C2Z001": 50,
+            "C2Z064": 50,
+            "C2Z074": 50,
+            "C2Z073": 50,
+            "C2Z072": 50,
+            "C2Z071": 50,
+            "C2Z070": 50,
+            "C2Z069": 50,
+            "C2Z068": 50,
+            "C2Z067": 50
+          }
+        },
+        "c1_nearest_centroid_id": {
+          "unique_count": 2,
+          "top_values": {
+            "Z06": 3050,
+            "Z05": 1950
+          }
+        },
+        "time_split": {
+          "unique_count": 4,
+          "top_values": {
+            "train": 2900,
+            "context_only": 700,
+            "validation": 700,
+            "test": 700
+          }
+        },
+        "environment_provenance": {
+          "unique_count": 1,
+          "top_values": {
+            "SYNTHETIC_smooth_spatiotemporal_scenarios": 5000
+          }
+        },
+        "catch_label_provenance": {
+          "unique_count": 1,
+          "top_values": {
+            "SYNTHETIC_BIOLOGICAL_HEURISTIC_NO_OBSERVED_CATCH": 5000
+          }
+        },
+        "navigation_status": {
+          "unique_count": 1,
+          "top_values": {
+            "SIMULATION_ONLY_NOT_FOR_REAL_NAVIGATION": 5000
+          }
+        }
+      }
+    },
+    "c3_market_prices.csv": {
+      "filename": "c3_market_prices.csv",
+      "rows": 5000,
+      "columns_count": 22,
+      "columns": [
+        "record_id",
+        "date",
+        "market_id",
+        "market_name",
+        "market_port_id",
+        "species_id",
+        "species_name",
+        "calendar_day_index",
+        "day_of_week_mon0",
+        "weekend_known_future",
+        "month_known_future",
+        "base_price_assumed_lkr_kg",
+        "market_multiplier_assumed",
+        "supply_kg_simulated",
+        "baseline_supply_kg_assumed",
+        "supply_ratio_simulated",
+        "demand_index_simulated",
+        "market_shock_index_simulated",
+        "price_lkr_per_kg",
+        "data_split",
+        "data_provenance",
+        "price_safety_status"
+      ],
+      "dtypes": {
+        "record_id": "object",
+        "date": "object",
+        "market_id": "object",
+        "market_name": "object",
+        "market_port_id": "object",
+        "species_id": "object",
+        "species_name": "object",
+        "calendar_day_index": "int64",
+        "day_of_week_mon0": "int64",
+        "weekend_known_future": "int64",
+        "month_known_future": "int64",
+        "base_price_assumed_lkr_kg": "float64",
+        "market_multiplier_assumed": "float64",
+        "supply_kg_simulated": "float64",
+        "baseline_supply_kg_assumed": "float64",
+        "supply_ratio_simulated": "float64",
+        "demand_index_simulated": "float64",
+        "market_shock_index_simulated": "float64",
+        "price_lkr_per_kg": "float64",
+        "data_split": "object",
+        "data_provenance": "object",
+        "price_safety_status": "object"
+      },
+      "null_counts": {},
+      "numeric_summary": {
+        "calendar_day_index": {
+          "min": 0.0,
+          "max": 199.0,
+          "mean": 99.5,
+          "std": 57.740079523297084
+        },
+        "day_of_week_mon0": {
+          "min": 0.0,
+          "max": 6.0,
+          "mean": 3.01,
+          "std": 1.9876343069155367
+        },
+        "weekend_known_future": {
+          "min": 0.0,
+          "max": 1.0,
+          "mean": 0.285,
+          "std": 0.4514595919377841
+        },
+        "month_known_future": {
+          "min": 1.0,
+          "max": 7.0,
+          "mean": 3.84,
+          "std": 1.9222744413339012
+        },
+        "base_price_assumed_lkr_kg": {
+          "min": 430.0,
+          "max": 1820.0,
+          "mean": 1026.0,
+          "std": 521.6113646031273
+        },
+        "market_multiplier_assumed": {
+          "min": 0.99,
+          "max": 1.07,
+          "mean": 1.036,
+          "std": 0.026535652020736825
+        },
+        "supply_kg_simulated": {
+          "min": 354.45,
+          "max": 3984.37,
+          "mean": 1664.740598,
+          "std": 767.7403837191716
+        },
+        "baseline_supply_kg_assumed": {
+          "min": 670.0,
+          "max": 2700.0,
+          "mean": 1674.0,
+          "std": 719.4494572270528
+        },
+        "supply_ratio_simulated": {
+          "min": 0.5290267,
+          "max": 1.5154132,
+          "mean": 0.99463146896,
+          "std": 0.1522457981813232
+        },
+        "demand_index_simulated": {
+          "min": 0.645521,
+          "max": 1.3382578,
+          "mean": 0.9769652371399999,
+          "std": 0.09461016522283122
+        },
+        "market_shock_index_simulated": {
+          "min": 0.830742,
+          "max": 1.1869783,
+          "mean": 0.99940926656,
+          "std": 0.05204356820828718
+        },
+        "price_lkr_per_kg": {
+          "min": 330.67,
+          "max": 2522.74,
+          "mean": 1058.24906,
+          "std": 550.7578723909777
+        }
+      },
+      "categorical_summary": {
+        "record_id": {
+          "unique_count": 5000,
+          "top_values": {
+            "C3M00001": 1,
+            "C3M03331": 1,
+            "C3M03338": 1,
+            "C3M03337": 1,
+            "C3M03336": 1,
+            "C3M03335": 1,
+            "C3M03334": 1,
+            "C3M03333": 1,
+            "C3M03332": 1,
+            "C3M03330": 1
+          }
+        },
+        "date": {
+          "unique_count": 200,
+          "top_values": {
+            "2025-01-01": 25,
+            "2025-05-18": 25,
+            "2025-05-08": 25,
+            "2025-05-09": 25,
+            "2025-05-10": 25,
+            "2025-05-11": 25,
+            "2025-05-12": 25,
+            "2025-05-13": 25,
+            "2025-05-14": 25,
+            "2025-05-15": 25
+          }
+        },
+        "market_id": {
+          "unique_count": 5,
+          "top_values": {
+            "M_PELIYAGODA": 1000,
+            "M_NEGOMBO": 1000,
+            "M_GALLE": 1000,
+            "M_MIRISSA": 1000,
+            "M_TANGALLE": 1000
+          }
+        },
+        "market_name": {
+          "unique_count": 5,
+          "top_values": {
+            "Peliyagoda Central Fish Market": 1000,
+            "Negombo (scenario market)": 1000,
+            "Galle (scenario market)": 1000,
+            "Mirissa (scenario market)": 1000,
+            "Tangalle (scenario market)": 1000
+          }
+        },
+        "market_port_id": {
+          "unique_count": 5,
+          "top_values": {
+            "P_PELIYAGODA": 1000,
+            "P_NEGOMBO": 1000,
+            "P_GALLE": 1000,
+            "P_MIRISSA": 1000,
+            "P_TANGALLE": 1000
+          }
+        },
+        "species_id": {
+          "unique_count": 5,
+          "top_values": {
+            "SP_SKIPJACK": 1000,
+            "SP_YELLOWFIN": 1000,
+            "SP_MACKEREL": 1000,
+            "SP_SARDINE": 1000,
+            "SP_SEER": 1000
+          }
+        },
+        "species_name": {
+          "unique_count": 5,
+          "top_values": {
+            "Skipjack tuna": 1000,
+            "Yellowfin tuna": 1000,
+            "Indian mackerel": 1000,
+            "Sardine (generic scenario)": 1000,
+            "Seer fish / king mackerel (generic)": 1000
+          }
+        },
+        "data_split": {
+          "unique_count": 3,
+          "top_values": {
+            "train": 3500,
+            "validation": 750,
+            "test": 750
+          }
+        },
+        "data_provenance": {
+          "unique_count": 1,
+          "top_values": {
+            "SYNTHETIC_SCENARIO_NOT_OBSERVED": 5000
+          }
+        },
+        "price_safety_status": {
+          "unique_count": 1,
+          "top_values": {
+            "NOT_REAL_MARKET_QUOTE": 5000
+          }
+        }
+      }
+    },
+    "c4_fuel_scenarios.csv": {
+      "filename": "c4_fuel_scenarios.csv",
+      "rows": 5000,
+      "columns_count": 64,
+      "columns": [
+        "scenario_id",
+        "c1_trip_id",
+        "c1_record_date_local",
+        "vessel_id",
+        "vessel_type",
+        "c1_zone_id",
+        "c2_spatial_nearest_zone_id",
+        "c2_zone_spatial_offset_km",
+        "zone_link_scope",
+        "vessel_length_m",
+        "vessel_beam_m",
+        "block_coefficient_assumed",
+        "lightship_mass_kg",
+        "payload_mass_kg",
+        "displacement_mass_kg",
+        "loaded_draft_m_approx",
+        "wetted_surface_m2_approx",
+        "engine_rated_hp_assumed",
+        "engine_rated_kw_assumed",
+        "engine_age_years_assumed",
+        "engine_continuous_limit_kw_assumed",
+        "propulsive_efficiency_assumed",
+        "bsfc_optimum_kg_kwh_assumed",
+        "maintenance_factor_assumed",
+        "forecast_wave_hs_m_c1_synthetic",
+        "wave_peak_period_s_c1_synthetic",
+        "forecast_wind_speed_ms_c1_synthetic",
+        "wave_heading_cos_synthetic",
+        "wind_heading_cos_synthetic",
+        "along_current_outbound_ms_assumed",
+        "planned_duration_h_c1",
+        "travel_oneway_distance_nm_scenario",
+        "travel_roundtrip_distance_km_scenario",
+        "planned_outbound_hours",
+        "planned_inbound_hours",
+        "fishing_operations_hours",
+        "outbound_speed_kn_model",
+        "inbound_speed_kn_model",
+        "outbound_effective_power_kw",
+        "inbound_effective_power_kw",
+        "outbound_brake_power_kw",
+        "inbound_brake_power_kw",
+        "outbound_friction_n",
+        "outbound_residuary_heuristic_n",
+        "outbound_wave_resistance_heuristic_n",
+        "outbound_air_resistance_n",
+        "outbound_total_resistance_n",
+        "transit_fuel_l_model",
+        "fishing_auxiliary_kw_model",
+        "fishing_fuel_l_model",
+        "fuel_consumption_l_model",
+        "sensitivity_low_l_scenario",
+        "sensitivity_high_l_scenario",
+        "reserve_fraction_assumed_research_only",
+        "reserve_fuel_l_scenario",
+        "fuel_plus_reserve_l_scenario",
+        "available_fuel_l_simulated",
+        "fuel_comparison_flag_research_only",
+        "speed_limited_on_any_leg",
+        "dataset_split_vessel_group",
+        "measured_fuel_l",
+        "fuel_target_provenance",
+        "confidence_status",
+        "operational_use"
+      ],
+      "dtypes": {
+        "scenario_id": "object",
+        "c1_trip_id": "object",
+        "c1_record_date_local": "object",
+        "vessel_id": "object",
+        "vessel_type": "object",
+        "c1_zone_id": "object",
+        "c2_spatial_nearest_zone_id": "object",
+        "c2_zone_spatial_offset_km": "float64",
+        "zone_link_scope": "object",
+        "vessel_length_m": "float64",
+        "vessel_beam_m": "float64",
+        "block_coefficient_assumed": "float64",
+        "lightship_mass_kg": "float64",
+        "payload_mass_kg": "float64",
+        "displacement_mass_kg": "float64",
+        "loaded_draft_m_approx": "float64",
+        "wetted_surface_m2_approx": "float64",
+        "engine_rated_hp_assumed": "float64",
+        "engine_rated_kw_assumed": "float64",
+        "engine_age_years_assumed": "float64",
+        "engine_continuous_limit_kw_assumed": "float64",
+        "propulsive_efficiency_assumed": "float64",
+        "bsfc_optimum_kg_kwh_assumed": "float64",
+        "maintenance_factor_assumed": "float64",
+        "forecast_wave_hs_m_c1_synthetic": "float64",
+        "wave_peak_period_s_c1_synthetic": "float64",
+        "forecast_wind_speed_ms_c1_synthetic": "float64",
+        "wave_heading_cos_synthetic": "float64",
+        "wind_heading_cos_synthetic": "float64",
+        "along_current_outbound_ms_assumed": "float64",
+        "planned_duration_h_c1": "float64",
+        "travel_oneway_distance_nm_scenario": "float64",
+        "travel_roundtrip_distance_km_scenario": "float64",
+        "planned_outbound_hours": "float64",
+        "planned_inbound_hours": "float64",
+        "fishing_operations_hours": "float64",
+        "outbound_speed_kn_model": "float64",
+        "inbound_speed_kn_model": "float64",
+        "outbound_effective_power_kw": "float64",
+        "inbound_effective_power_kw": "float64",
+        "outbound_brake_power_kw": "float64",
+        "inbound_brake_power_kw": "float64",
+        "outbound_friction_n": "float64",
+        "outbound_residuary_heuristic_n": "float64",
+        "outbound_wave_resistance_heuristic_n": "float64",
+        "outbound_air_resistance_n": "float64",
+        "outbound_total_resistance_n": "float64",
+        "transit_fuel_l_model": "float64",
+        "fishing_auxiliary_kw_model": "float64",
+        "fishing_fuel_l_model": "float64",
+        "fuel_consumption_l_model": "float64",
+        "sensitivity_low_l_scenario": "float64",
+        "sensitivity_high_l_scenario": "float64",
+        "reserve_fraction_assumed_research_only": "float64",
+        "reserve_fuel_l_scenario": "float64",
+        "fuel_plus_reserve_l_scenario": "float64",
+        "available_fuel_l_simulated": "float64",
+        "fuel_comparison_flag_research_only": "object",
+        "speed_limited_on_any_leg": "bool",
+        "dataset_split_vessel_group": "object",
+        "measured_fuel_l": "float64",
+        "fuel_target_provenance": "object",
+        "confidence_status": "object",
+        "operational_use": "object"
+      },
+      "null_counts": {
+        "measured_fuel_l": 5000
+      },
+      "numeric_summary": {
+        "c2_zone_spatial_offset_km": {
+          "min": 4.427,
+          "max": 458.128,
+          "mean": 179.740553,
+          "std": 147.73121527086505
+        },
+        "vessel_length_m": {
+          "min": 5.436,
+          "max": 19.534,
+          "mean": 9.4222898,
+          "std": 3.4728842611918824
+        },
+        "vessel_beam_m": {
+          "min": 1.658,
+          "max": 5.219,
+          "mean": 2.7994598,
+          "std": 0.9348186617574737
+        },
+        "block_coefficient_assumed": {
+          "min": 0.364,
+          "max": 0.647,
+          "mean": 0.4664058,
+          "std": 0.07158521925008693
+        },
+        "lightship_mass_kg": {
+          "min": 459.225,
+          "max": 21727.72,
+          "mean": 4590.4535684,
+          "std": 5937.849006686072
+        },
+        "payload_mass_kg": {
+          "min": 61.669,
+          "max": 18104.209,
+          "mean": 2206.8389382,
+          "std": 2780.519004358775
+        },
+        "displacement_mass_kg": {
+          "min": 580.997,
+          "max": 37382.679,
+          "mean": 6797.2925066,
+          "std": 8285.296606545235
+        },
+        "loaded_draft_m_approx": {
+          "min": 0.079821,
+          "max": 1.164123,
+          "mean": 0.35586807319999997,
+          "std": 0.17383297921580948
+        },
+        "wetted_surface_m2_approx": {
+          "min": 9.4118,
+          "max": 95.8923,
+          "mean": 28.739168839999998,
+          "std": 20.857581292146623
+        },
+        "engine_rated_hp_assumed": {
+          "min": 14.007,
+          "max": 326.238,
+          "mean": 81.5408032,
+          "std": 78.6018855587062
+        },
+        "engine_rated_kw_assumed": {
+          "min": 10.445,
+          "max": 243.2756,
+          "mean": 60.80496562,
+          "std": 58.61341807218491
+        },
+        "engine_age_years_assumed": {
+          "min": 1.03,
+          "max": 20.94,
+          "mean": 11.782242,
+          "std": 5.827446770293841
+        },
+        "engine_continuous_limit_kw_assumed": {
+          "min": 7.5204,
+          "max": 175.0735,
+          "mean": 43.66476162,
+          "std": 42.09692379661949
+        },
+        "propulsive_efficiency_assumed": {
+          "min": 0.4604,
+          "max": 0.6686,
+          "mean": 0.5632865400000001,
+          "std": 0.05908388661860349
+        },
+        "bsfc_optimum_kg_kwh_assumed": {
+          "min": 0.2251,
+          "max": 0.2739,
+          "mean": 0.24957981999999998,
+          "std": 0.013584385222452078
+        },
+        "maintenance_factor_assumed": {
+          "min": 0.9809,
+          "max": 1.1095,
+          "mean": 1.0484544,
+          "std": 0.03668182219923066
+        },
+        "forecast_wave_hs_m_c1_synthetic": {
+          "min": 0.18,
+          "max": 4.335,
+          "mean": 1.4338436,
+          "std": 0.7472612326415721
+        },
+        "wave_peak_period_s_c1_synthetic": {
+          "min": 4.0,
+          "max": 11.166,
+          "mean": 6.7695534,
+          "std": 1.3161899701623436
+        },
+        "forecast_wind_speed_ms_c1_synthetic": {
+          "min": 1.077,
+          "max": 30.06,
+          "mean": 12.021401,
+          "std": 5.673479045479493
+        },
+        "wave_heading_cos_synthetic": {
+          "min": -0.99898,
+          "max": 0.99994,
+          "mean": -0.0006741860000000016,
+          "std": 0.575106448149243
+        },
+        "wind_heading_cos_synthetic": {
+          "min": -0.99981,
+          "max": 0.99973,
+          "mean": -0.0009603920000000024,
+          "std": 0.5805720548280772
+        },
+        "along_current_outbound_ms_assumed": {
+          "min": -0.64905,
+          "max": 0.64883,
+          "mean": -0.0003806460000000016,
+          "std": 0.37572986319783314
+        },
+        "planned_duration_h_c1": {
+          "min": 4.0,
+          "max": 160.0,
+          "mean": 30.234122000000003,
+          "std": 38.80689473849931
+        },
+        "travel_oneway_distance_nm_scenario": {
+          "min": 2.17524,
+          "max": 380.10557,
+          "mean": 44.166820856,
+          "std": 64.69111523492221
+        },
+        "travel_roundtrip_distance_km_scenario": {
+          "min": 8.0571,
+          "max": 1407.911,
+          "mean": 163.59390406,
+          "std": 239.61589102567274
+        },
+        "planned_outbound_hours": {
+          "min": 0.54036,
+          "max": 47.75247,
+          "mean": 6.3193472900000005,
+          "std": 8.437722468220361
+        },
+        "planned_inbound_hours": {
+          "min": 0.4915,
+          "max": 50.01032,
+          "mean": 6.350463186,
+          "std": 8.479459797464855
+        },
+        "fishing_operations_hours": {
+          "min": 1.76597,
+          "max": 114.28323,
+          "mean": 17.564311388,
+          "std": 22.97232190718531
+        },
+        "outbound_speed_kn_model": {
+          "min": 2.86909,
+          "max": 9.87648,
+          "mean": 6.290729182,
+          "std": 1.149941164715992
+        },
+        "inbound_speed_kn_model": {
+          "min": 2.83029,
+          "max": 9.87648,
+          "mean": 6.285162098,
+          "std": 1.1538001836281906
+        },
+        "outbound_effective_power_kw": {
+          "min": 0.40377,
+          "max": 86.53961,
+          "mean": 10.870052522,
+          "std": 10.95322082522716
+        },
+        "inbound_effective_power_kw": {
+          "min": 0.41038,
+          "max": 104.96001,
+          "mean": 10.895259504,
+          "std": 11.157007060787441
+        },
+        "outbound_brake_power_kw": {
+          "min": 0.65419,
+          "max": 164.32266,
+          "mean": 19.515366034,
+          "std": 19.926422312686658
+        },
+        "inbound_brake_power_kw": {
+          "min": 0.67608,
+          "max": 169.39963,
+          "mean": 19.557899686000003,
+          "std": 20.285195166447807
+        },
+        "outbound_friction_n": {
+          "min": 45.4736,
+          "max": 2667.193,
+          "mean": 483.63432007999995,
+          "std": 458.28513254297366
+        },
+        "outbound_residuary_heuristic_n": {
+          "min": 10.3125,
+          "max": 7176.2122,
+          "mean": 767.47406186,
+          "std": 958.8382154453531
+        },
+        "outbound_wave_resistance_heuristic_n": {
+          "min": 13.7022,
+          "max": 15883.0375,
+          "mean": 1728.1429405200001,
+          "std": 1815.222974595657
+        },
+        "outbound_air_resistance_n": {
+          "min": 0.0081,
+          "max": 4787.4369,
+          "mean": 137.35549953999998,
+          "std": 314.0766331690911
+        },
+        "outbound_total_resistance_n": {
+          "min": 180.2927,
+          "max": 20559.763,
+          "mean": 3116.60682068,
+          "std": 2659.9709010896854
+        },
+        "transit_fuel_l_model": {
+          "min": 0.48495,
+          "max": 3018.03218,
+          "mean": 147.48797962,
+          "std": 320.1270762470711
+        },
+        "fishing_auxiliary_kw_model": {
+          "min": 0.6173,
+          "max": 44.65,
+          "mean": 6.43231088,
+          "std": 6.750428194145205
+        },
+        "fishing_fuel_l_model": {
+          "min": 0.53401,
+          "max": 1397.57423,
+          "mean": 79.620373348,
+          "std": 168.58065158552358
+        },
+        "fuel_consumption_l_model": {
+          "min": 2.31553,
+          "max": 3626.28121,
+          "mean": 227.10835296,
+          "std": 457.2136575202906
+        },
+        "sensitivity_low_l_scenario": {
+          "min": 2.05365,
+          "max": 2933.96443,
+          "mean": 192.775795458,
+          "std": 386.1607582352254
+        },
+        "sensitivity_high_l_scenario": {
+          "min": 2.65597,
+          "max": 4538.88474,
+          "mean": 271.740677716,
+          "std": 549.904270573991
+        },
+        "reserve_fraction_assumed_research_only": {
+          "min": 0.2,
+          "max": 0.34995,
+          "mean": 0.27494529199999995,
+          "std": 0.04355726008343421
+        },
+        "reserve_fuel_l_scenario": {
+          "min": 0.63418,
+          "max": 1131.82486,
+          "mean": 62.52439606,
+          "std": 128.41055354953693
+        },
+        "fuel_plus_reserve_l_scenario": {
+          "min": 3.04102,
+          "max": 4711.4116,
+          "mean": 289.632749054,
+          "std": 584.1645966570618
+        },
+        "available_fuel_l_simulated": {
+          "min": 2.01431,
+          "max": 4461.62038,
+          "mean": 262.88445924,
+          "std": 540.9365747011291
+        },
+        "measured_fuel_l": {
+          "min": null,
+          "max": null,
+          "mean": null,
+          "std": null
+        }
+      },
+      "categorical_summary": {
+        "scenario_id": {
+          "unique_count": 5000,
+          "top_values": {
+            "C4T00001": 1,
+            "C4T03331": 1,
+            "C4T03338": 1,
+            "C4T03337": 1,
+            "C4T03336": 1,
+            "C4T03335": 1,
+            "C4T03334": 1,
+            "C4T03333": 1,
+            "C4T03332": 1,
+            "C4T03330": 1
+          }
+        },
+        "c1_trip_id": {
+          "unique_count": 5000,
+          "top_values": {
+            "C1T00001": 1,
+            "C1T03331": 1,
+            "C1T03338": 1,
+            "C1T03337": 1,
+            "C1T03336": 1,
+            "C1T03335": 1,
+            "C1T03334": 1,
+            "C1T03333": 1,
+            "C1T03332": 1,
+            "C1T03330": 1
+          }
+        },
+        "c1_record_date_local": {
+          "unique_count": 4387,
+          "top_values": {
+            "2023-12-30T05:00:00": 4,
+            "2024-08-31T03:00:00": 4,
+            "2023-12-18T16:00:00": 4,
+            "2025-07-25T11:00:00": 4,
+            "2024-02-22T03:00:00": 3,
+            "2023-09-27T04:00:00": 3,
+            "2023-04-08T11:00:00": 3,
+            "2025-06-27T18:00:00": 3,
+            "2024-05-26T05:00:00": 3,
+            "2024-04-02T03:00:00": 3
+          }
+        },
+        "vessel_id": {
+          "unique_count": 250,
+          "top_values": {
+            "V121": 39,
+            "V206": 35,
+            "V136": 34,
+            "V162": 32,
+            "V205": 32,
+            "V149": 32,
+            "V108": 31,
+            "V003": 31,
+            "V197": 31,
+            "V199": 30
+          }
+        },
+        "vessel_type": {
+          "unique_count": 3,
+          "top_values": {
+            "OFRP": 2675,
+            "IDAY": 1383,
+            "IMUL": 942
+          }
+        },
+        "c1_zone_id": {
+          "unique_count": 10,
+          "top_values": {
+            "Z04": 523,
+            "Z01": 514,
+            "Z05": 514,
+            "Z10": 512,
+            "Z02": 507,
+            "Z03": 504,
+            "Z06": 495,
+            "Z07": 483,
+            "Z09": 483,
+            "Z08": 465
+          }
+        },
+        "c2_spatial_nearest_zone_id": {
+          "unique_count": 5,
+          "top_values": {
+            "C2Z091": 2048,
+            "C2Z100": 1431,
+            "C2Z093": 514,
+            "C2Z099": 512,
+            "C2Z067": 495
+          }
+        },
+        "zone_link_scope": {
+          "unique_count": 1,
+          "top_values": {
+            "SPATIAL_ONLY_C1_2024_C2_2025_NOT_TEMPORAL_JOIN": 5000
+          }
+        },
+        "fuel_comparison_flag_research_only": {
+          "unique_count": 2,
+          "top_values": {
+            "SCENARIO_BELOW_MODEL_REQUIREMENT": 3101,
+            "SCENARIO_ABOVE_MODEL_REQUIREMENT": 1899
+          }
+        },
+        "dataset_split_vessel_group": {
+          "unique_count": 3,
+          "top_values": {
+            "train": 3459,
+            "test": 825,
+            "validation": 716
+          }
+        },
+        "fuel_target_provenance": {
+          "unique_count": 1,
+          "top_values": {
+            "SYNTHETIC_PHYSICS_CONSTRAINED_NOT_MEASURED": 5000
+          }
+        },
+        "confidence_status": {
+          "unique_count": 1,
+          "top_values": {
+            "UNCALIBRATED_NO_REAL_WORLD_CONFIDENCE": 5000
+          }
+        },
+        "operational_use": {
+          "unique_count": 1,
+          "top_values": {
+            "PROHIBITED_RESEARCH_SIMULATION_ONLY": 5000
+          }
+        }
+      }
+    }
+  },
+  "cross_linkages": {
+    "c1_c4_link": {
+      "c1_trips": 5000,
+      "c4_trips": 5000,
+      "overlap": 5000
+    },
+    "zones": {
+      "c1_zones": [
+        "Z06",
+        "Z01",
+        "Z08",
+        "Z07",
+        "Z02",
+        "Z05",
+        "Z04",
+        "Z10",
+        "Z03",
+        "Z09"
+      ],
+      "c2_zone_count": 100,
+      "c2_referenced_c1_zones": [
+        "Z06",
+        "Z05"
+      ]
+    },
+    "c4_c2_zones": {
+      "unique_referenced": 5,
+      "zone_link_scopes": {
+        "SPATIAL_ONLY_C1_2024_C2_2025_NOT_TEMPORAL_JOIN": 5000
+      }
+    },
+    "c3_market_info": {
+      "markets": [
+        "M_PELIYAGODA",
+        "M_NEGOMBO",
+        "M_GALLE",
+        "M_MIRISSA",
+        "M_TANGALLE"
+      ],
+      "ports": [
+        "P_PELIYAGODA",
+        "P_NEGOMBO",
+        "P_GALLE",
+        "P_MIRISSA",
+        "P_TANGALLE"
+      ],
+      "species": [
+        "SP_SKIPJACK",
+        "SP_YELLOWFIN",
+        "SP_MACKEREL",
+        "SP_SARDINE",
+        "SP_SEER"
+      ],
+      "date_range": [
+        "2025-01-01",
+        "2025-07-19"
+      ]
+    }
+  }
+}

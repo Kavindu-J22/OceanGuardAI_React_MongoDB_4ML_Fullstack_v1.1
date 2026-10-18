@@ -1,0 +1,8 @@
+{
+  "component": "C4_Physics_Informed_Fuel_Predictor",
+  "architecture": "Physics-Informed Neural Network (PINN) with ITTC-1957 Constraints",
+  "test_mae_liters": 66.01657285748107,
+  "test_rmse_liters": 191.69337722313756,
+  "best_val_mae_liters": 49.56634333946185,
+  "epochs_trained": 10
+}

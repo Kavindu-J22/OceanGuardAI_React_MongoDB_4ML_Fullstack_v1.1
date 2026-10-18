@@ -1,0 +1,6 @@
+﻿market_id,market_name,mapped_port_id,scenario_lat_approx,scenario_lon_approx,price_factor_assumption,location_status,price_status
+M_PELIYAGODA,Peliyagoda Central Fish Market,P_PELIYAGODA,6.959,79.901,1.03,APPROX_FOR_SCENARIO_NOT_SURVEYED,ALL_SYNTHETIC
+M_NEGOMBO,Negombo (scenario market),P_NEGOMBO,7.209,79.839,0.99,APPROX_FOR_SCENARIO_NOT_SURVEYED,ALL_SYNTHETIC
+M_GALLE,Galle (scenario market),P_GALLE,6.033,80.217,1.04,APPROX_FOR_SCENARIO_NOT_SURVEYED,ALL_SYNTHETIC
+M_MIRISSA,Mirissa (scenario market),P_MIRISSA,5.947,80.459,1.07,APPROX_FOR_SCENARIO_NOT_SURVEYED,ALL_SYNTHETIC
+M_TANGALLE,Tangalle (scenario market),P_TANGALLE,6.025,80.793,1.05,APPROX_FOR_SCENARIO_NOT_SURVEYED,ALL_SYNTHETIC

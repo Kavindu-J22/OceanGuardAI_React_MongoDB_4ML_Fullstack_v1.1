@@ -1,0 +1,6 @@
+﻿species_id,common_name,scientific_name,initial_price_lkr_kg_synthetic,baseline_supply_kg_synthetic,reference_temperature_c_assumption,quality_proxy_half_life_h_at_0c_assumption,k_ref_per_h_assumption,Arrhenius_Ea_j_per_mol_assumption,histamine_hazard_relevant_group_flag,source_status
+SP_SKIPJACK,Skipjack tuna,Katsuwonus pelamis,740.0,1800.0,0.0,190.0,0.003648143,54000.0,YES,ASSUMED_UNCALIBRATED_NOT_SPECIES_LAB_MEASURED
+SP_YELLOWFIN,Yellowfin tuna,Thunnus albacares,1450.0,1100.0,0.0,185.0,0.003746742,57000.0,YES,ASSUMED_UNCALIBRATED_NOT_SPECIES_LAB_MEASURED
+SP_MACKEREL,Indian mackerel,Rastrelliger kanagurta,690.0,2100.0,0.0,140.0,0.004951051,58500.0,YES,ASSUMED_UNCALIBRATED_NOT_SPECIES_LAB_MEASURED
+SP_SARDINE,Sardine (generic scenario),Sardinella spp. (not species-resolved),430.0,2700.0,0.0,125.0,0.005545177,56000.0,YES,ASSUMED_UNCALIBRATED_NOT_SPECIES_LAB_MEASURED
+SP_SEER,Seer fish / king mackerel (generic),Scomberomorus spp. (not species-resolved),1820.0,670.0,0.0,175.0,0.003960841,60000.0,YES,ASSUMED_UNCALIBRATED_NOT_SPECIES_LAB_MEASURED

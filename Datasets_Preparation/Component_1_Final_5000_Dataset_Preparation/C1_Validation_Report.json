@@ -1,0 +1,86 @@
+{
+  "master_records": 5000,
+  "temporal_records": 60000,
+  "vessels": 250,
+  "steps_per_trip": 12,
+  "missing_cells": 0,
+  "duplicate_trip_ids": 0,
+  "class_count": {
+    "Safe": 3685,
+    "Caution": 1218,
+    "Danger": 97
+  },
+  "class_count_by_split": {
+    "Caution": {
+      "test": 208,
+      "train": 839,
+      "validation": 171
+    },
+    "Danger": {
+      "test": 17,
+      "train": 66,
+      "validation": 14
+    },
+    "Safe": {
+      "test": 525,
+      "train": 2595,
+      "validation": 565
+    }
+  },
+  "vessel_count_by_type": {
+    "OFRP": 133,
+    "IDAY": 69,
+    "IMUL": 48
+  },
+  "scenario_count": {
+    "moderate": 1718,
+    "rough": 1374,
+    "calm": 1198,
+    "severe": 710
+  },
+  "feature_ranges": {
+    "heuristic_dri_score": {
+      "minimum": 0.448,
+      "maximum": 80.685
+    },
+    "payload_limit_ratio": {
+      "minimum": 0.12,
+      "maximum": 1.259
+    },
+    "estimated_loaded_freeboard_m": {
+      "minimum": 0.479,
+      "maximum": 2.326
+    },
+    "forecast_max_wind_ms": {
+      "minimum": 1.077,
+      "maximum": 30.06
+    },
+    "forecast_max_wave_height_m": {
+      "minimum": 0.18,
+      "maximum": 4.335
+    },
+    "planned_trip_duration_h": {
+      "minimum": 4.0,
+      "maximum": 160.0
+    }
+  },
+  "tests_passed": [
+    "exactly_5000_trip_samples",
+    "exactly_60000_time_steps",
+    "12_forecast_steps_per_trip",
+    "250_synthetic_vessels",
+    "all_trip_ids_join",
+    "no_missing_values",
+    "unique_trip_ids",
+    "valid_label_score_mapping",
+    "0_to_100_scores",
+    "gust_ge_mean_wind",
+    "deepwater_steepness_le_0.082",
+    "draft_load_equation_verified",
+    "chronological_split_verified",
+    "reproducible_fixed_random_seed"
+  ],
+  "external_field_validation": "NOT PERFORMED: no observed vessel, weather, expert/incident risk labels",
+  "model_performance": "NOT TRAINED / NOT EVALUATED",
+  "sensitivity_note": "16 weather/load perturbations of fixed worst & P75 snapshots per trip; screening only, not statistical confidence interval"
+}

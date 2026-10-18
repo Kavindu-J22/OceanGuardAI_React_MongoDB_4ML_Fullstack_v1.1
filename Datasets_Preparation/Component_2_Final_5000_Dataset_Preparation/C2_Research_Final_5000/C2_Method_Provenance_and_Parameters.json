@@ -1,0 +1,170 @@
+{
+  "dataset_title": "C2 Southern Sri Lanka synthetic spatial fishing habitat and Pareto benchmark",
+  "release": "1.0-prototype",
+  "creation_date": "2026-10-16",
+  "very_important": "NO OBSERVED SATELLITE VALUES, CATCH EVENTS, OR VALIDATED CATCH PROBABILITIES IN THE CSV. DO NOT REPRESENT SYNTHETIC SCORES AS FIELD PERFORMANCE OR USE FOR NAVIGATION.",
+  "data_type": "synthetic scenario data with physically consistent streamfunction current and unit-consistent cost calculations",
+  "actual_satellite_values_downloaded": false,
+  "observed_catch_records": 0,
+  "latitude_range": [
+    5.22,
+    5.76
+  ],
+  "longitude_range": [
+    79.78,
+    80.77
+  ],
+  "start_date": "2025-01-01",
+  "end_date": "2025-02-19",
+  "records": 5000,
+  "zone_nodes": 100,
+  "days": 50,
+  "graph_directed_edges": 360,
+  "species": [
+    "yellowfin",
+    "skipjack"
+  ],
+  "biological_model": "Gaussian temperature suitability + saturating chlorophyll response + fronts + currents, parameter values illustrative and uncalibrated",
+  "streamfunction": {
+    "psi_m2_per_s": "A(t)*sin(kx*x+0.14*t)*sin(ky*y-0.12*t)",
+    "u_ms": "u_bg(t) - dpsi/dy",
+    "v_ms": "v_bg(t) + dpsi/dx",
+    "divergence_analytical": 0,
+    "kx_rad_per_m": 4.333231246330749e-05,
+    "ky_rad_per_m": 5.983986006837701e-05,
+    "A_m2_per_s_range": [
+      2020,
+      2580
+    ]
+  },
+  "physics_and_cost_scenario": {
+    "route_factor": 1.15,
+    "speed_knots": 8.0,
+    "fuel_burn_l_per_h": 6.0,
+    "illustrative_fuel_price_lkr_per_l": 300.0,
+    "site_fishing_hours": 4.0,
+    "site_idle_fuel_lph": 2.0,
+    "site_current_sensitivity_lph_per_ms": 8.0,
+    "earth_radius_km": 6371.0088,
+    "one_nautical_mile_km": 1.852
+  },
+  "species_parameters_are_assumptions_not_established_thresholds": {
+    "yellowfin": {
+      "temperature_optimum_c": 28.0,
+      "temperature_sigma_c": 2.2,
+      "food_half_saturation_mg_m3": 0.17,
+      "score_weights": {
+        "temp": 0.42,
+        "food": 0.33,
+        "front": 0.17,
+        "current": 0.08
+      },
+      "synthetic_logit_intercept": -2.8,
+      "synthetic_logit_gain": 4.4
+    },
+    "skipjack": {
+      "temperature_optimum_c": 28.6,
+      "temperature_sigma_c": 1.8,
+      "food_half_saturation_mg_m3": 0.2,
+      "score_weights": {
+        "temp": 0.37,
+        "food": 0.29,
+        "front": 0.22,
+        "current": 0.12
+      },
+      "synthetic_logit_intercept": -2.65,
+      "synthetic_logit_gain": 4.25
+    }
+  },
+  "heat_front_scale_c_per_km": 0.026,
+  "current_optimum_ms": 0.22,
+  "current_sigma_ms": 0.23,
+  "input_tensor_shape": [
+    43,
+    7,
+    100,
+    5
+  ],
+  "target_tensor_shape": [
+    43,
+    100,
+    2
+  ],
+  "split_note": "Next-day target in 43 windows with 7-day history; chronological train 29, validation 7, test 7; normalize on train only; same spatial nodes on all dates",
+  "integration_note": "C1 nearest centroid only, not a shared validated operational safety gate. C4 must recompute fuel for vessel before any trip.",
+  "known_limitations": [
+    "No empirical CPUE/catch labels",
+    "No real Copernicus/NASA observations yet",
+    "No calibrated biological coefficients",
+    "No legal maritime boundary/land/bathymetry/geofencing validation",
+    "Ports approximate, route line surrogate only, not navigable waypoints",
+    "Fuel on-site/current coefficients assumed, not experimentally fitted",
+    "No adverse-weather, hazards, prohibited areas, gear type or boat licensing filters",
+    "Only 50 synthetic days; test metrics reflect simulator, not true ecological skill"
+  ],
+  "references": [
+    {
+      "id": "SRC01",
+      "organization": "Copernicus Marine",
+      "title": "Global Ocean Physics Analysis and Forecast",
+      "url": "https://data.marine.copernicus.eu/product/GLOBAL_ANALYSISFORECAST_PHY_001_024/description",
+      "usage": "variable concepts SST, east/north current; no downloaded values"
+    },
+    {
+      "id": "SRC02",
+      "organization": "Copernicus Marine",
+      "title": "Global Ocean Colour L4 product",
+      "url": "https://data.marine.copernicus.eu/product/OCEANCOLOUR_GLO_BGC_L4_MY_009_104/services",
+      "usage": "daily chlorophyll-a observational replacement source; not accessed"
+    },
+    {
+      "id": "SRC03",
+      "organization": "NASA",
+      "title": "MODIS Chlorophyll-a Concentration",
+      "url": "https://modis.gsfc.nasa.gov/data/dataprod/chlor_a.php",
+      "usage": "chlorophyll-a variable definition and units; not downloaded"
+    },
+    {
+      "id": "SRC04",
+      "organization": "NOAA Fisheries",
+      "title": "Pacific Yellowfin Tuna",
+      "url": "https://www.fisheries.noaa.gov/species/pacific-yellowfin-tuna",
+      "usage": "yellowfin temperature-related habitat background; coefficients illustrative"
+    },
+    {
+      "id": "SRC05",
+      "organization": "FAO",
+      "title": "Resources fishing and biology of tropical tunas",
+      "url": "https://www.fao.org/4/t0081e/T0081E18.htm",
+      "usage": "skipjack regional temperature variability; coefficients illustrative"
+    },
+    {
+      "id": "SRC06",
+      "organization": "PubMed",
+      "title": "Multiple ocean parameter-based potential fishing zone generation and validation in Western Bay of Bengal",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38153544/",
+      "usage": "evidence fronts/chlorophyll and need actual CPUE validation"
+    },
+    {
+      "id": "SRC07",
+      "organization": "IEEE",
+      "title": "Deb et al., NSGA-II, 2002",
+      "url": "https://doi.org/10.1109/4235.996017",
+      "usage": "Pareto multiple objective conceptual basis"
+    },
+    {
+      "id": "SRC08",
+      "organization": "IHO",
+      "title": "Nautical mile definition",
+      "url": "https://registry.iho.int/fdd/view5.do?idx=824&type=5&valueType=0",
+      "usage": "1 nautical mile exactly 1852 meters"
+    },
+    {
+      "id": "SRC09",
+      "organization": "NOAA Fisheries",
+      "title": "Atlantic Skipjack Tuna",
+      "url": "https://www.fisheries.noaa.gov/species/atlantic-skipjack-tuna",
+      "usage": "skipjack affinity for convergence/upwelling habitats"
+    }
+  ]
+}
